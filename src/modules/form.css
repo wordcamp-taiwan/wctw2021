@@ -1,0 +1,60 @@
+input[type="text"],
+input[type="email"]:not(#subscribe-field-blog_subscription-4),
+input[type="url"],
+input[type="tel"],
+textarea {
+  border: 2px solid #FFE792;
+  border-radius: 10px;
+  background-color: #FFF4CC;
+}
+input[type="text"]:focus,
+input[type="email"]:not(#subscribe-field-blog_subscription-4):focus,
+input[type="url"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  border: 2px solid #FDD000;
+}
+select {
+  border: 2px solid #FFE792;
+  border-radius: 10px;
+  background-color: #FFF4CC;
+}
+button:not([name="jetpack_subscriptions_widget"]):not(.menu-toggle):not(.dropdown-toggle), input[type="button"], input[type="submit"] {
+	background-color: #1FAC43;
+	font-weight: 800;
+	font-size: 14px;
+	line-height: 1;
+	margin-top: 20px;
+	padding: 1em 2em;
+	text-decoration: none;
+	color: #ffffff;
+	border-radius: 10px 10px 0 10px;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+	background: linear-gradient(145DEG,#7BC16D,#20AB41);
+	transition: all .2s ease-in-out;
+}
+button.dropdown-toggle {color:#ffffff;}
+button:not([name="jetpack_subscriptions_widget"]):not(.menu-toggle):not(.dropdown-toggle):hover, input[type="button"]:hover, input[type="submit"]:hover {
+  /* background-color: #7BC16D; */
+  background: linear-gradient(145DEG,#7BC16D,#20AB41);
+  color: white;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
+  opacity: .9;
+  transform: scale(1.04);
+}
+button.dropdown-toggle:hover {color:#ffffff;}
+.search-form .search-submit {
+  margin: 0 !important;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 10px 0 0;
+}
+.search-form .search-field {
+  border: 2px solid #FFE792;
+  border-radius: 10px;
+  background-color: #FFF4CC;
+}
+.search-form .search-field:focus {
+  border: 2px solid #FDD000;
+}
