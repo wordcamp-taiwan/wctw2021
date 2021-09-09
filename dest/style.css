@@ -74,6 +74,9 @@ h1:not(.site-title):not(.home_info_title):after, .site-footer .widget-column.foo
 	    -ms-transform: rotate(15deg);
 	        transform: rotate(15deg);
 }
+.page-header{
+	display:none;
+}
 
 h2:not(.widget-title):not(.home_info_sub), h4.sponsor-level-title {
 	color: #6b9bd2;
