@@ -111,3 +111,560 @@ h4:not(.sponsor-level-title), h5, h6, p, ul, ol, li {
 blockquote.wp-block-quote.is-style-info p {
 	color: #4b4848;
 }
+.EN {
+	font-family: "Work Sans";
+	line-height: 1.5;
+	font-weight: normal;
+}
+
+	.EN h1 {
+		font-size: 48px;
+	}
+
+	.EN h2 {
+		font-size: 36px;
+	}
+
+	.EN h3 {
+		font-size: 28px;
+	}
+
+	.EN h4 {
+		font-size: 24px;
+	}
+
+	.EN h5 {
+		font-size: 18px;
+	}
+
+	.EN h6 {
+		font-size: 16px;
+	}
+
+	.EN p {
+		font-size: 16px;
+	}
+
+.CHT {
+	font-family: 'Noto Sans TC';
+	line-height: 1.8;
+	font-weight: normal;
+}
+
+	.CHT h1 {
+		font-size: 48px;
+	}
+
+	.CHT h2 {
+		font-size: 36px;
+	}
+
+	.CHT h3 {
+		font-size: 28px;
+	}
+
+	.CHT h4 {
+		font-size: 24px;
+	}
+
+	.CHT h5 {
+		font-size: 18px;
+	}
+
+	.CHT h6 {
+		font-size: 16px;
+	}
+
+	.CHT p {
+		font-size: 16px;
+	}
+
+.pencil::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/Group-1.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.cup::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/Group-2.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.mountain::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/Group-3.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.bottle::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/Group-4.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.earth::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/Group-5.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.computer::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/Group-6.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.boy::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/Group-7.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.house::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/Group-8.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.cloud::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-1.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.fan::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-2.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.circle::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-3.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.halfoval::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-4.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.float::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-5.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.blu-tri::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-6.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.phone::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-7.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.screen::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-8.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.pad::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-9.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.mail::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-12.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.star::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-13.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.pentagon::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-14.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.halfcircle::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-15.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.trapezoid::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-16.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.quartercircle::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-17.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.uparrow::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-18.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.net::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-19.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.pad2::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-20.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.screen1::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-21.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.star1::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-25.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.twostar::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-26.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.donut::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-27.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.slide::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-28.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.redsquare::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-29.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.house::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-30.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.house1::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-31.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.glass::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-33.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.oval::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-37.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.hash::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-38.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.stick::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-39.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.l-brackets::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-40.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	-moz-transform: scaleY(-1);
+	-webkit-transform: scaleY(-1);
+	-o-transform: scaleY(-1);
+	transform: scaleY(-1);
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.r-brackets::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-40.png");
+	content: "";
+	display: inline-block;
+	-moz-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	transform: scaleX(-1);
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.many-star::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-41.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.clock::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-42.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.yellowbtn {
+	width: 150px;
+	line-height: 40px;
+	text-align: center;
+	font-weight: bold;
+	background-color: #fdd708;
+	border: black 2px solid;
+	border-radius: 15px;
+}
+
+.bluebtn {
+	width: 150px;
+	line-height: 40px;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	background-color: #23459a;
+	border: black 2px solid;
+	border-radius: 15px;
+}
