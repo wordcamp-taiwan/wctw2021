@@ -1,9 +1,9 @@
 #wp-custom-header {
-	background: no-repeat;
+	background: repeat;
 	position: fixed;
 	height: 100%;
-	background-image: url('https://2019.taipei.wordcamp.org/files/2019/07/20190721_2000x640px_back.png');
-	background-size: 100%;
+	background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/wctw-kv-bg.jpeg);
+	background-size: 10px;
 	background-position: top;
 }
 
@@ -14,11 +14,11 @@
 
 @media screen and (max-width:1024px) {
 	#wp-custom-header {
-		background: no-repeat;
+		/* background: no-repeat; */
 		position: fixed;
 		height: 100%;
-		background-image: url('https://2019.taipei.wordcamp.org/files/2019/08/image_from_ios.png');
-		background-size: 100%;
+		/* background-image: url('https://2019.taipei.wordcamp.org/files/2019/08/image_from_ios.png'); */
+		/* background-size: 100%; */
 		background-position: top;
 	}
 }
@@ -119,7 +119,7 @@ header#masthead.site-header {
 
 .site-branding .site-title>a {
 	display: block;
-	background-image: url('https://2019.taipei.wordcamp.org/files/2019/08/wctpe-key-visual-080819-main.png');
+	background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/wctw2021-keyvisual-2560.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	width: 480px;
