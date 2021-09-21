@@ -69,21 +69,36 @@ h1:not(.site-title):not(.home_info_title):after, .site-footer .widget-column.foo
 	display:none;
 }
 
-h2:not(.widget-title):not(.home_info_sub), h4.sponsor-level-title {
-	color: #6b9bd2;
+h2:not(.widget-title):not(.home_info_sub),
+h4.sponsor-level-title {
+	display: flex;
+	align-items: center;
+	color: #000;
 	font-size: 28px;
 }
 
-h2:not(.widget-title):not(.home_info_sub):before, h4.sponsor-level-title:before {
+h2:not(.widget-title):not(.home_info_sub):before,
+h4.sponsor-level-title:before {
 	content: '';
 	display: inline-block;
-	width: 32px;
-	height: 20px;
-	background-image: url(https://2019.taipei.wordcamp.org/files/2019/08/wctpe-2019-icons-title.png);
+	width: 28px;
+	height: 37px;
+	background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/vector-38.png);
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin-right: 10px;
+	margin-right: 25px;
 }
+
+h2.heading-green:not(.widget-title):not(.home_info_sub):before,
+h4.heading-green:before {
+	background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/heading-green.png);
+}
+
+h2.heading-yellow:not(.widget-title):not(.home_info_sub):before,
+h4.heading-yellow:before {
+	background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/heading-yellow.png);
+}
+
 h2.entry-title a {
 	color: #6b9bd2;
 }
