@@ -5,7 +5,7 @@
 .site-footer:before {
 	content: "";
 	display: block;
-	background-image: url(https://2019.taipei.wordcamp.org/files/2019/08/footer-sep.png);
+	/* background-image: url(https://2019.taipei.wordcamp.org/files/2019/08/footer-sep.png); */
 	background-size: 95%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -17,7 +17,7 @@
 }
 @media screen and (max-width: 450px) {
   .site-footer:before {
-    background-image: url(https://2019.taipei.wordcamp.org/files/2019/08/footer-sep-mobile.png);
+    /* background-image: url(https://2019.taipei.wordcamp.org/files/2019/08/footer-sep-mobile.png); */
     padding-top: 10%;
   }
 }
@@ -27,6 +27,10 @@
 }
 .site-footer .widget-area {
 	padding: 0;
+	/* background: url(https://taiwan.wordcamp.org/2021/files/2021/09/wctw-kv-bg.jpeg); */
+	/* background-size: 15px; */
+	/* display: flex; */
+	/* flex-wrap: wrap; */
 }
 
 .site-footer .widget-column.footer-widget-1 {
