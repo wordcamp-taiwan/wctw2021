@@ -291,7 +291,7 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
     padding-top: 10px;
     font-size: 36px;
     margin-bottom: 0;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .heading-group p.has-text-align-center {
@@ -374,6 +374,12 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
     display: block;
 	line-height: 1.5;
     margin: 0;
+	font-size: 18px;
+}
+
+.entry-content .pink-square .wp-block-button__link span.text-en {
+	font-size: 14px;
+    font-weight: 400;
 }
 
 .entry-content .is-style-outline.pink-square .wp-block-button__link:not(.has-background):hover {
@@ -455,14 +461,10 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 
 /* Blog editor - separator */
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots):not(.is-style-building):not(.is-style-full) {
-	border: 0;
-	background: none;
-	max-width: 450px;
-	background-image: url(https://2019.taipei.wordcamp.org/files/2019/08/footer-sep-mobile.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	padding-top: 8%;
+    background-color: #ddd;
+	border-bottom: none;
+    padding-top: 0;
+    height: 1px;
 }
 .wp-block-separator.is-style-wide {
 	border: 0;
@@ -500,9 +502,6 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 	max-width: 100% !important;
 }
 @media screen and (max-width: 450px) {
-	.wp-block-separator:not(.is-style-wide):not(.is-style-dots):not(.is-style-building):not(.is-style-full) {
-		padding-top: 12%;
-	}
   .wp-block-separator.is-style-wide {
     background-image: url(https://2019.taipei.wordcamp.org/files/2019/08/footer-sep-mobile-02.png);
 		padding-top: 12%;
