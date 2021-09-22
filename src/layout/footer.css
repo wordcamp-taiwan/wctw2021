@@ -27,8 +27,8 @@
 }
 .site-footer .widget-area {
 	padding: 0;
-	background: url(https://taiwan.wordcamp.org/2021/files/2021/09/wctw-kv-bg.jpeg);
-	background-size: 15px;
+	/* background: url(https://taiwan.wordcamp.org/2021/files/2021/09/wctw-kv-bg.jpeg); */
+	/* background-size: 15px; */
 	/* display: flex; */
 	/* flex-wrap: wrap; */
 }
