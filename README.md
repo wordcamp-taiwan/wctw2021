@@ -3,6 +3,40 @@
 WordCamp Taiwan 2021 活動網站樣式開發。
 本專案是來自 [WordCamp Taipei 2019](https://github.com/wordcamp-taiwan/WCTPETW) 的分支專案。
 
+## 活動網站本地測試
+
+### 本地端主機測試安裝
+
+可參考 **主要官方網站本地端主機測試安裝** 或是使用你習慣的本地 WordPress 測試環境
+
+### 安裝 WordCamp Taipei 2021 主題
+
+1. 確定已安裝 Twenty Seventeen 主題
+2. 利用終端機 (macOS) 或命令提示字元 (Windows) 執行 `cd /path/to/your/WordPress/wp-content/themes`，並複製 WordCamp Taipei 2021 主題到本機 `git clone git@github.com:wordcamp-taiwan/wctw2021.git`
+3. 啟用 WordCamp Taipei 2021 主題
+
+### 建立開發環境
+
+1. 確認系統中已安裝 [Node.js](https://nodejs.org/en/)
+2. 在佈景主題路徑 (`wctw2021`) 中執行 `npm install` (如果權限不夠請用 `sudo npm install`)。這會安裝所有方便開發的工具：[gulp](https://gulpjs.com/), [livereload](https://www.npmjs.com/package/gulp-livereload), [autoprefixer](https://github.com/postcss/autoprefixer), [cssnano](https://cssnano.co/)
+記得安裝 [livereload 瀏覽器擴充套件](http://livereload.com/extensions/)，每次更新 CSS 檔案後，瀏覽器會自動刷新。
+
+- `npm run build` 只跑一次
+- `npm run watch` 會持續監控 CSS 檔案
+
+主要修改檔案 /src/style.css
+輸出檔案 /dest/style.css
+
+### 建立提取要求 (Pull Request)
+1. 在本專案中按下右上角的 \[Fork\] 建立分支專案。
+2. 利用終端機 (macOS) 或命令提示字元 (Windows) 執行 `cd /path/to/your/WordPress/wp-content/themes/wctw2021`，在佈景主題路徑中執行 `git remote origin set-url {{你的 Git 存放位址.git}}`
+3. 接著執行 `remote add upstream git@github.com:wordcamp-taiwan/wctw2021.git`。
+4. 每次開發前，先執行 `git pull upstream main` 更新最新版本
+5. 在本地編輯完後，建立本地版本 `git add . && git commit -m "版本資訊"`，並執行 `git push origin main` 將版本推送到自己的 Git 存放庫。
+5. 前往 [Pull Request](https://github.com/wordcamp-taiwan/wctw2021/pulls) 頁面，點擊 \[New Pull Request\]。
+6. 點擊 \[compare across forks\]，將右邊的 Repo 改為自己的 repo。
+7. 按照介面提示，逐步建立提取要求，並通知網站組夥伴進行測試與合併。
+
 ## 主要官方網站本地測試
 
 ### 本地端主機測試安裝
@@ -64,26 +98,4 @@ WordCamp Taiwan 2021 活動網站樣式開發。
     * Font Awesome: `https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css`
     * Check "Enqueue Dashicons"
 
-## 活動網站本地測試
 
-### 本地端主機測試安裝
-
-可參考 **主要官方網站本地端主機測試安裝** 或是使用你習慣的本地 WordPress 測試環境
-
-### 安裝 WordCamp Taipei 2021 主題
-
-1. 確定已安裝 Twenty Seventeen 主題
-2. pull WordCamp Taipei 2021 主題 `git clone git@github.com:wordcamp-taiwan/wctw2021.git`
-3. 啟用 WordCamp Taipei 2021 主題
-4. 待補齊~
-
-## 開工囉！
-
-在主題資料夾內 `cd wctw2021` 執行 `npm install` (如果權限不夠請用 `sudo npm install`)。這會安裝所有方便開發的工具：[gulp](https://gulpjs.com/), [livereload](https://www.npmjs.com/package/gulp-livereload), [autoprefixer](https://github.com/postcss/autoprefixer), [cssnano](https://cssnano.co/)
-記得安裝 [livereload 瀏覽器擴充套件](http://livereload.com/extensions/)，每次更新 CSS 檔案後，瀏覽器會自動刷新。
-
-- `npm run build` 只跑一次
-- `npm run watch` 會持續監控 CSS 檔案
-
-主要修改檔案 /src/style.css
-輸出檔案 /dest/style.css

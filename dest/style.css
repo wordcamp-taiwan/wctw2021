@@ -8,7 +8,7 @@ html[lang^="zh-"] button,
 html[lang^="zh-"] input,
 html[lang^="zh-"] select,
 html[lang^="zh-"] textarea {
-	font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans TC', sans-serif;
 }
 
 p {
@@ -47,8 +47,8 @@ a:hover, .nav-title a:hover, .entry-meta a:hover {
 }
 
 h1:not(.site-title):not(.home_info_title), h1.entry-title:not(:first-child), .page .panel-content .entry-title, .page-title, body.page:not(.twentyseventeen-front-page) .entry-title, .site-footer .widget-column.footer-widget-1 h2.widget-title {
-	background-color: #0068b6;
-	color: white;
+	background-color: none;
+	color: #000;
 	display: inline-block;
 	padding: 10px 35px;
 	border-radius: 10px;
@@ -59,7 +59,10 @@ h1:not(.site-title):not(.home_info_title), h1.entry-title:not(:first-child), .pa
 	text-transform: none;
 	letter-spacing: 1px !important;
 }
-h1:not(.site-title):not(.home_info_title):after, .site-footer .widget-column.footer-widget-1 h2.widget-title:before {
+h1.entry-title {
+	display: none;
+}
+/* h1:not(.site-title):not(.home_info_title):after, .site-footer .widget-column.footer-widget-1 h2.widget-title:before {
 	content: '';
 	display: inline-block;
 	width: 0;
@@ -70,29 +73,46 @@ h1:not(.site-title):not(.home_info_title):after, .site-footer .widget-column.foo
 	position: absolute;
 	right: 15px;
 	bottom: -20px;
-	-webkit-transform: rotate(15deg);
-	    -ms-transform: rotate(15deg);
-	        transform: rotate(15deg);
-}
+	transform: rotate(15deg);
+} */
 .page-header{
 	display:none;
 }
 
-h2:not(.widget-title):not(.home_info_sub), h4.sponsor-level-title {
-	color: #6b9bd2;
+h2:not(.widget-title):not(.home_info_sub),
+h4.sponsor-level-title {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	color: #000;
 	font-size: 28px;
 }
 
-h2:not(.widget-title):not(.home_info_sub):before, h4.sponsor-level-title:before {
+h2:not(.widget-title):not(.home_info_sub):before,
+h4.sponsor-level-title:before {
 	content: '';
 	display: inline-block;
-	width: 32px;
-	height: 20px;
-	background-image: url(https://2019.taipei.wordcamp.org/files/2019/08/wctpe-2019-icons-title.png);
+	width: 28px;
+	height: 37px;
+	background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/vector-38.png);
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin-right: 10px;
+	margin-right: 25px;
 }
+
+h2.heading-green:not(.widget-title):not(.home_info_sub):before,
+h4.heading-green:before {
+	background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/heading-green.png);
+}
+
+h2.heading-yellow:not(.widget-title):not(.home_info_sub):before,
+h4.heading-yellow:before {
+	background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/heading-yellow.png);
+}
+
 h2.entry-title a {
 	color: #6b9bd2;
 }
@@ -110,10 +130,10 @@ h2.entry-title a:hover {
 }
 
 h3:not(.sd-title) {
-	border-left: 5px solid #FDD000;
-	color: #0068b6;
+	color: #000;
+	font-size: 28px;
 	padding: 0 0 0 10px;
-	font-size: 22px;
+	margin-bottom: 10px;
 }
 
 h4:not(.sponsor-level-title), h5, h6, p, ul, ol, li {
@@ -122,6 +142,573 @@ h4:not(.sponsor-level-title), h5, h6, p, ul, ol, li {
 
 blockquote.wp-block-quote.is-style-info p {
 	color: #4b4848;
+}
+.EN {
+	font-family: "Work Sans";
+	line-height: 1.5;
+	font-weight: normal;
+}
+
+	.EN h1 {
+		font-size: 48px;
+	}
+
+	.EN h2 {
+		font-size: 36px;
+	}
+
+	.EN h3 {
+		font-size: 28px;
+	}
+
+	.EN h4 {
+		font-size: 24px;
+	}
+
+	.EN h5 {
+		font-size: 18px;
+	}
+
+	.EN h6 {
+		font-size: 16px;
+	}
+
+	.EN p {
+		font-size: 16px;
+	}
+
+.CHT {
+	font-family: 'Noto Sans TC';
+	line-height: 1.8;
+	font-weight: normal;
+}
+
+	.CHT h1 {
+		font-size: 48px;
+	}
+
+	.CHT h2 {
+		font-size: 36px;
+	}
+
+	.CHT h3 {
+		font-size: 28px;
+	}
+
+	.CHT h4 {
+		font-size: 24px;
+	}
+
+	.CHT h5 {
+		font-size: 18px;
+	}
+
+	.CHT h6 {
+		font-size: 16px;
+	}
+
+	.CHT p {
+		font-size: 16px;
+	}
+.shadow,
+.entry-content a.shadow {
+	-webkit-box-shadow: 0px 4px;
+	        box-shadow: 0px 4px;
+}
+
+.pencil::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/Group-1.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.cup::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/Group-2.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.mountain::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/Group-3.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.bottle::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/Group-4.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.earth::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/Group-5.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.computer::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/Group-6.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.boy::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/Group-7.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.house::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/Group-8.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.cloud::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-1.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.fan::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-2.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.circle::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-3.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.halfoval::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-4.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.float::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-5.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.blu-tri::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-6.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.phone::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-7.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.screen::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-8.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.pad::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-9.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.mail::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-12.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.star::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-13.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.pentagon::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-14.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.halfcircle::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-15.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.trapezoid::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-16.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.quartercircle::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-17.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.uparrow::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-18.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.net::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-19.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.pad2::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-20.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.screen1::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-21.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.star1::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-25.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.twostar::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-26.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.donut::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-27.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.slide::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-28.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.redsquare::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-29.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.house::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-30.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.house1::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-31.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.glass::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-33.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.oval::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-37.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.hash::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-38.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.stick::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-39.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.l-brackets::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-40.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	-webkit-transform: scaleY(-1);
+	-ms-transform: scaleY(-1);
+	    transform: scaleY(-1);
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.r-brackets::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-40.png");
+	content: "";
+	display: inline-block;
+	-webkit-transform: scaleX(-1);
+	-ms-transform: scaleX(-1);
+	    transform: scaleX(-1);
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.many-star::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-41.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.clock::before {
+	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-42.png");
+	content: "";
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.yellowbtn {
+	width: 150px;
+	line-height: 40px;
+	text-align: center;
+	font-weight: bold;
+	background-color: #fdd708;
+	border: black 2px solid;
+	border-radius: 15px;
+}
+
+.bluebtn {
+	width: 150px;
+	line-height: 40px;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	background-color: #23459a;
+	border: black 2px solid;
+	border-radius: 15px;
+}
+
+@media screen and ( min-width: 48em ) {
+	.wrap {
+		max-width: 1064px;
+	}
+	
 }
 /* hide single post sidebar & adjust blog layout */
 #page #secondary {
@@ -183,7 +770,7 @@ blockquote.wp-block-quote.is-style-info p {
 .site-footer:before {
 	content: "";
 	display: block;
-	background-image: url(https://2019.taipei.wordcamp.org/files/2019/08/footer-sep.png);
+	/* background-image: url(https://2019.taipei.wordcamp.org/files/2019/08/footer-sep.png); */
 	background-size: 95%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -195,7 +782,7 @@ blockquote.wp-block-quote.is-style-info p {
 }
 @media screen and (max-width: 450px) {
   .site-footer:before {
-    background-image: url(https://2019.taipei.wordcamp.org/files/2019/08/footer-sep-mobile.png);
+    /* background-image: url(https://2019.taipei.wordcamp.org/files/2019/08/footer-sep-mobile.png); */
     padding-top: 10%;
   }
 }
@@ -205,6 +792,10 @@ blockquote.wp-block-quote.is-style-info p {
 }
 .site-footer .widget-area {
 	padding: 0;
+	/* background: url(https://taiwan.wordcamp.org/2021/files/2021/09/wctw-kv-bg.jpeg); */
+	/* background-size: 15px; */
+	/* display: flex; */
+	/* flex-wrap: wrap; */
 }
 
 .site-footer .widget-column.footer-widget-1 {
@@ -691,11 +1282,11 @@ body:not(.twentyseventeen-front-page):not(.page-slug-sponsors) .site-footer .wcb
 	}
 }
 #wp-custom-header {
-	background: no-repeat;
+	background: repeat;
 	position: fixed;
 	height: 100%;
-	background-image: url('https://2019.taipei.wordcamp.org/files/2019/07/20190721_2000x640px_back.png');
-	background-size: 100%;
+	background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/wctw-kv-bg.jpeg);
+	background-size: 10px;
 	background-position: top;
 }
 
@@ -706,11 +1297,11 @@ body:not(.twentyseventeen-front-page):not(.page-slug-sponsors) .site-footer .wcb
 
 @media screen and (max-width:1024px) {
 	#wp-custom-header {
-		background: no-repeat;
+		/* background: no-repeat; */
 		position: fixed;
 		height: 100%;
-		background-image: url('https://2019.taipei.wordcamp.org/files/2019/08/image_from_ios.png');
-		background-size: 100%;
+		/* background-image: url('https://2019.taipei.wordcamp.org/files/2019/08/image_from_ios.png'); */
+		/* background-size: 100%; */
 		background-position: top;
 	}
 }
@@ -811,7 +1402,7 @@ header#masthead.site-header {
 
 .site-branding .site-title>a {
 	display: block;
-	background-image: url('https://2019.taipei.wordcamp.org/files/2019/08/wctpe-key-visual-080819-main.png');
+	background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/wctw2021-keyvisual-2560.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	width: 480px;
@@ -1532,6 +2123,197 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
   color: #0068B6;
 }
 
+/**
+ * 關於我們當日活動、過去活動區塊
+ */
+.group-cells .wp-block-columns .wp-block-column {
+    padding: 30px 40px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    
+}
+
+.group-cells .wp-block-columns:nth-child(2n+1) .wp-block-column:nth-child(2n),
+.group-cells .wp-block-columns:nth-child(2n) .wp-block-column:nth-child(2n+1) {
+    background: #fdd708;
+}
+
+.group-cells .wp-block-columns:nth-child(2n+1) .wp-block-column:nth-child(2n) p,
+.group-cells .wp-block-columns:nth-child(2n) .wp-block-column:nth-child(2n+1) p {
+    color: #000;
+}
+
+.group-cells .wp-block-columns:nth-child(2n+1) .wp-block-column:nth-child(2n+1),
+.group-cells .wp-block-columns:nth-child(2n) .wp-block-column:nth-child(2n) {
+    background: #23459a;
+}
+
+.group-cells .wp-block-columns:nth-child(2n+1) .wp-block-column:nth-child(2n+1) p,
+.group-cells .wp-block-columns:nth-child(2n) .wp-block-column:nth-child(2n) p {
+    color: #fff;
+}
+
+.group-cells p.group-cell-digits {
+    font-size: 48px;
+	font-weight: 700;
+    margin-bottom: 0;
+}
+
+.group-cells p.group-cell-text-zh,
+.group-cells p.group-cell-text-en {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+/** 
+ * Heading groups
+ */
+
+.heading-group h2 {
+    line-height: 1;
+}
+
+.heading-group h2.has-text-align-center::before {
+    content: '';
+    display: none;
+}
+
+.heading-group h2.has-text-align-center {
+    display: block;
+    padding-top: 10px;
+    font-size: 36px;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.heading-group p.has-text-align-center {
+    font-size: 24px;
+}
+
+.heading-group h2 span {
+    font-size: 28px;
+    color: #666;
+}
+
+/**
+ * Heading Group - Heading Brackets
+ */
+.heading-bracket {
+    display: auto;
+    text-align: center;
+}
+
+.heading-bracket .wp-block-group__inner-container {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.heading-bracket .wp-block-group__inner-container::before,
+.heading-bracket .wp-block-group__inner-container::after {
+    content: '';
+    display: inline-block;
+    width: 64px;
+    height: 40px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.heading-bracket .wp-block-group__inner-container::before {
+    background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-40.png");
+    background-size: contain;
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+
+.heading-bracket .wp-block-group__inner-container::after {
+    background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-40.png");
+    content: "";
+    display: inline-block;
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+@media screen and ( max-width: 48em ) {
+	.heading-bracket h2.has-text-align-center {
+		max-width: calc( 100% - 80px );
+	}
+}
+
+/** 
+ * Pink square;
+ */
+ .pink-square {
+    background: #F1464319;
+    color: #000;
+    border: 2px solid;
+    border-radius: 10px;
+    width: 218px;
+    height: 210px;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+}
+
+.entry-content .pink-square .wp-block-button__link {
+    border: none;
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    display: block;
+	line-height: 1.5;
+    margin: 0;
+	font-size: 18px;
+}
+
+.entry-content .pink-square .wp-block-button__link span.text-en {
+	font-size: 14px;
+    font-weight: 400;
+}
+
+.entry-content .is-style-outline.pink-square .wp-block-button__link:not(.has-background):hover {
+	background: none;
+	color: inherit;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+
+@media screen and ( max-width: 48em ) {
+	.group-cells .wp-block-columns .wp-block-column:not(:last-child) {
+		margin-bottom: 1.75em;
+	}
+	.heading-bracket .wp-block-group__inner-container:after,
+	.heading-bracket .wp-block-group__inner-container:before {
+		width: 30px;
+	}
+	.wp-block-columns.pink-square-group {
+		display: grid;
+		grid-gap: 15px;
+		grid-template-columns: repeat(2, 130px);
+	}
+	.pink-square {
+		height: 122px;
+	}
+	.entry-content .pink-square .wp-block-button__link {
+		padding: 0.5em;
+	}
+}
+
 @media screen and (min-width:768px) {
 	.entry-content blockquote.is-style-info {
 		padding: 2rem 2rem 2rem calc(3rem + 37px);
@@ -1584,14 +2366,10 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 
 /* Blog editor - separator */
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots):not(.is-style-building):not(.is-style-full) {
-	border: 0;
-	background: none;
-	max-width: 450px;
-	background-image: url(https://2019.taipei.wordcamp.org/files/2019/08/footer-sep-mobile.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	padding-top: 8%;
+    background-color: #ddd;
+	border-bottom: none;
+    padding-top: 0;
+    height: 1px;
 }
 .wp-block-separator.is-style-wide {
 	border: 0;
@@ -1629,9 +2407,6 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 	max-width: 100% !important;
 }
 @media screen and (max-width: 450px) {
-	.wp-block-separator:not(.is-style-wide):not(.is-style-dots):not(.is-style-building):not(.is-style-full) {
-		padding-top: 12%;
-	}
   .wp-block-separator.is-style-wide {
     background-image: url(https://2019.taipei.wordcamp.org/files/2019/08/footer-sep-mobile-02.png);
 		padding-top: 12%;
@@ -2036,7 +2811,7 @@ a.wp-block-button__link:active {
 	background-color: #7BC16D;
 }
 
-input[type="text"],
+/* input[type="text"],
 input[type="email"]:not(#subscribe-field-blog_subscription-4),
 input[type="url"],
 input[type="tel"],
@@ -2067,46 +2842,38 @@ button:not([name="jetpack_subscriptions_widget"]):not(.menu-toggle):not(.dropdow
 	text-decoration: none;
 	color: #ffffff;
 	border-radius: 10px 10px 0 10px;
-	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
-	        box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
-	background: -webkit-gradient(linear,left top, left bottom,from(145DEG),color-stop(#7BC16D),to(#20AB41));
-	background: -o-linear-gradient(145DEG,#7BC16D,#20AB41);
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
 	background: linear-gradient(145DEG,#7BC16D,#20AB41);
-	-webkit-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
-}
-button.dropdown-toggle {color:#ffffff;}
-button:not([name="jetpack_subscriptions_widget"]):not(.menu-toggle):not(.dropdown-toggle):hover, input[type="button"]:hover, input[type="submit"]:hover {
-  /* background-color: #7BC16D; */
-  background: -webkit-gradient(linear,left top, left bottom,from(145DEG),color-stop(#7BC16D),to(#20AB41));
-  background: -o-linear-gradient(145DEG,#7BC16D,#20AB41);
-  background: linear-gradient(145DEG,#7BC16D,#20AB41);
-  color: white;
-  -webkit-box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
-          box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
-  opacity: .9;
-  -webkit-transform: scale(1.04);
-      -ms-transform: scale(1.04);
-          transform: scale(1.04);
-}
-button.dropdown-toggle:hover {color:#ffffff;}
-.search-form .search-submit {
-  margin: 0 !important;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  border-radius: 0 10px 0 0;
-}
-.search-form .search-field {
-  border: 2px solid #FFE792;
+} */
+/* 
+
+/* form input fields */
+input[type="text"],
+input[type="email"]:not(#subscribe-field-blog_subscription-4),
+input[type="url"],
+input[type="tel"],
+textarea {
+  border:  1px solid #060606 !important;
   border-radius: 10px;
-  background-color: #FFF4CC;
+  background: rgba(253, 215, 8, 0.1) !important;
 }
-.search-form .search-field:focus {
-  border: 2px solid #FDD000;
+input[type="text"]:focus,
+input[type="email"]:not(#subscribe-field-blog_subscription-4):focus,
+input[type="url"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+	border:  1px solid #060606 !important;
+}
+select {
+	border:  1px solid #060606 !important;
+    border-radius: 10px;
+    background: rgba(253, 215, 8, 0.1) !important;
 }
 
+.contact-form input[type=email], .contact-form input[type=tel], .contact-form input[type=text], .contact-form input[type=url] {
+    width: 100% !important;
+}
 .wcorg-organizers {
 	margin-top: 1em !important;
 	border: 1px solid #bbcce9;
