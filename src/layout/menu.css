@@ -1,29 +1,33 @@
 .navigation-top {
-	background-color: #0068b6;
-	border-radius: 10px;
+	background-color: #000;
+	/* border-radius: 10px; */
 	border-top: none;
 	border-bottom: none;
 /* 	margin: 0 20px; */
-	bottom: 45px;
-	width: auto;
+	bottom: 0;
+	width: 100%;
 	font-size: 1rem;
 	padding: 0 20px;
+	z-index:1000;
 }
 
 .navigation-top .wrap {
 	max-width: none;
 	padding: 0;
 }
-@media screen and (min-width:1120px) {
+.ic-accessibility-24px {
+  background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%202c1.1%200%202%20.9%202%202s-.9%202-2%202-2-.9-2-2%20.9-2%202-2zm9%207h-6v13h-2v-6h-2v6H9V9H3V7h18v2z%22%2F%3E%3C%2Fsvg%3E')
+}
+
+/* @media screen and (min-width:1120px) {
 	.navigation-top {
-		width: 1080px !important;
 		left: 50% !important;
 		right: auto !important;
 		-webkit-transform: translateX(-50%) !important;
 		    -ms-transform: translateX(-50%) !important;
 		        transform: translateX(-50%) !important;
 	}
-}
+} */
 
 .navigation-top a {
 	color: #fefefe;
@@ -46,8 +50,8 @@
 }
 
 .main-navigation a:hover {
-	color: #fefefe;
-	background-color: #6b9bd2;
+	color: #fff;
+	background-color: #666;
 }
 
 .main-navigation ul {
@@ -57,12 +61,43 @@
 	border-radius: 10px; */
 }
 
-.main-navigation ul li:hover > ul, .main-navigation ul li.focus > ul {
+.main-navigation li.to-content {
+    position: relative !important;
+    width: 40px;
+    height: auto;
+    clip: unset;
+    -webkit-clip-path: none;
+    clip-path: none;
+    margin-left: auto;
+}
+
+.main-navigation li.to-content a {
+    background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2220%22%20r%3D%2219%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M20%2010.375C20.1823%2010.375%2020.3572%2010.4474%2020.4861%2010.5764C20.6151%2010.7053%2020.6875%2010.8802%2020.6875%2011.0625V27.2779L25.0132%2022.9508C25.1423%2022.8217%2025.3174%2022.7491%2025.5%2022.7491C25.6825%2022.7491%2025.8576%2022.8217%2025.9867%2022.9508C26.1158%2023.0798%2026.1884%2023.2549%2026.1884%2023.4375C26.1884%2023.6201%2026.1158%2023.7952%2025.9867%2023.9242L20.4867%2029.4242C20.4229%2029.4883%2020.347%2029.5391%2020.2635%2029.5737C20.18%2029.6084%2020.0904%2029.6262%2020%2029.6262C19.9096%2029.6262%2019.82%2029.6084%2019.7365%2029.5737C19.653%2029.5391%2019.5771%2029.4883%2019.5132%2029.4242L14.0132%2023.9242C13.8841%2023.7952%2013.8116%2023.6201%2013.8116%2023.4375C13.8116%2023.2549%2013.8841%2023.0798%2014.0132%2022.9508C14.1423%2022.8217%2014.3174%2022.7491%2014.5%2022.7491C14.6826%2022.7491%2014.8576%2022.8217%2014.9867%2022.9508L19.3125%2027.2779V11.0625C19.3125%2010.8802%2019.3849%2010.7053%2019.5138%2010.5764C19.6428%2010.4474%2019.8176%2010.375%2020%2010.375Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E);
+    width: 40px;
+    right: 0;
+    background-size: contain;
+    background-position: 50%;
+    position: absolute !important;
+    font-size: 0;
+    top: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
 	left: 0;
 	right: auto;
 }
 
-.main-navigation ul li.menu-item-has-children.focus:before, .main-navigation ul li.menu-item-has-children:hover:before, .main-navigation ul li.menu-item-has-children.focus:after, .main-navigation ul li.menu-item-has-children:hover:after, .main-navigation ul li.page_item_has_children.focus:before, .main-navigation ul li.page_item_has_children:hover:before, .main-navigation ul li.page_item_has_children.focus:after, .main-navigation ul li.page_item_has_children:hover:after {
+.main-navigation ul li.menu-item-has-children.focus:before,
+.main-navigation ul li.menu-item-has-children:hover:before,
+.main-navigation ul li.menu-item-has-children.focus:after,
+.main-navigation ul li.menu-item-has-children:hover:after,
+.main-navigation ul li.page_item_has_children.focus:before,
+.main-navigation ul li.page_item_has_children:hover:before,
+.main-navigation ul li.page_item_has_children.focus:after,
+.main-navigation ul li.page_item_has_children:hover:after {
 	display: none;
 }
 
@@ -80,30 +115,34 @@
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 	}
+	.navigation-top #top-menu {
+		max-width: 1080px;
+		margin: auto;
+	}
 }
 
-.navigation-top .menu>.current-menu-item>a,.navigation-top .menu>.current_page_item>a {
-	color: #333333;
-	background-color: #bbcce9;
-/*background-image: url('https://2018.ogijima.wordcamp.org/files/2018/04/nav-current.png');
-	background-repeat: no-repeat;
-	background-position: 0 100%;
-	background-size: 115px auto;*/
+.navigation-top .menu>.current-menu-item>a,
+.navigation-top .menu>.current_page_item>a {
+	color: #000;
+	background-color: #ffd708;
 }
 
 @media screen and (min-width:40em) {
-	.navigation-top .menu>.current-menu-item>a,.navigation-top .menu>.current_page_item>a {
+	.navigation-top .menu>.current-menu-item>a,
+	.navigation-top .menu>.current_page_item>a {
 		background-position: 50% 100%;
 	}
 }
 
-.navigation-top .menu>.current-menu-item>a[href*="#post-"],.navigation-top .menu>.current_page_item>a[href*="#post-"] {
+.navigation-top .menu>.current-menu-item>a[href*="#post-"],
+.navigation-top .menu>.current_page_item>a[href*="#post-"] {
 	background: none;
 	-webkit-box-shadow: none;
 	        box-shadow: none;
 }
 
-.navigation-top .menu-item-has-children:after,.navigation-top .page_item_has_children:after {
+.navigation-top .menu-item-has-children:after,
+.navigation-top .page_item_has_children:after {
 	border-bottom-color: #0068b699 !important;
 }
 
@@ -127,10 +166,6 @@
 }
 
 @media screen and (max-width:48em) {
-	.navigation-top:not(.site-navigation-fixed) {
-		margin: 0 20px;
-	}
-
 	.navigation-top nav {
 		margin: 0;
 	}
@@ -170,14 +205,6 @@
 	text-align: center;
 }
 
-.navigation-top {
-	bottom: 10px;
-	z-index:1000;
-}
-.navigation-top.site-navigation-fixed {
-	border-radius: 0 0 10px 10px;
-}
-
 @media screen and (min-width:768px) {
 	.navigation-top {
 		bottom: 18px;
@@ -186,7 +213,7 @@
 
 @media screen and (min-width:1120px) {
 	.navigation-top {
-		bottom: 25px;
+		bottom: 0;
 	}
 }
 

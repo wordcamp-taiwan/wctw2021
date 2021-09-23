@@ -380,6 +380,8 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 .entry-content .pink-square .wp-block-button__link span.text-en {
 	font-size: 14px;
     font-weight: 400;
+	display: inline-block;
+	line-height: 1.3;
 }
 
 .entry-content .is-style-outline.pink-square .wp-block-button__link:not(.has-background):hover {
