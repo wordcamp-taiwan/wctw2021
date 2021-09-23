@@ -103,15 +103,16 @@
 	display: inline-block;
 }
 
-.site-footer .widget-column.footer-widget-2 input[type="email"] {
+#subscribe-email input[type="email"] {
 	height: 50px;
+	background-color: #fff;
 	border: 2px solid #000;
 	border-right: 0;
 	border-radius: 10px 0 0 10px;
 	margin: 0;
-	width: 160px !important;
+	width: 100% !important;
 }
-.site-footer .widget-column.footer-widget-2 button[type="submit"] {
+#subscribe-submit button[type="submit"] {
 	background-color: #c4c4c4;
 	border: 2px solid #000;
 	border-left: 0;
@@ -321,7 +322,7 @@ body:not(.twentyseventeen-front-page):not(.page-slug-sponsors) .site-footer .wcb
 		width: 100%;
 	}
 	#subscribe-email {
-		width: 50%;
+		width: auto;
 	}
 }
 /* h2.widget-title {
