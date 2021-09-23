@@ -37,7 +37,7 @@ button:not([name="jetpack_subscriptions_widget"]):not(.menu-toggle):not(.dropdow
 
 /* form input fields */
 input[type="text"],
-input[type="email"]:not(#subscribe-field-blog_subscription-4),
+input[type="email"],
 input[type="url"],
 input[type="tel"],
 textarea {
@@ -46,7 +46,7 @@ textarea {
   background: rgba(253, 215, 8, 0.1);
 }
 input[type="text"]:focus,
-input[type="email"]:not(#subscribe-field-blog_subscription-4):focus,
+input[type="email"]:focus,
 input[type="url"]:focus,
 input[type="tel"]:focus,
 textarea:focus {
