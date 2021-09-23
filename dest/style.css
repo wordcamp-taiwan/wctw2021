@@ -772,19 +772,19 @@ body:not(.twentyseventeen-front-page) .entry-content {
 	margin-top: 0;
 	border: 0;
 }
-.site-footer:before {
-	content: "";
-	display: block;
+/* .site-footer:before { */
+	/* content: ""; */
+	/* display: block; */
 	/* background-image: url(https://2019.taipei.wordcamp.org/files/2019/08/footer-sep.png); */
-	background-size: 95%;
-	background-repeat: no-repeat;
-	background-position: center;
-	width: 100%;
-	max-width: 1200px;
-	padding-top: 8%;
+	/* background-size: 95%; */
+	/* background-repeat: no-repeat; */
+	/* background-position: center; */
+	/* width: 100%; */
+	/* max-width: 1200px; */
+	/* padding-top: 8%; */
 	/* padding-top: calc( 100% * 2 / 3 ); */
-	margin: 0 auto;
-}
+	/* margin: 0 auto; */
+/* } */
 @media screen and (max-width: 450px) {
   .site-footer:before {
     /* background-image: url(https://2019.taipei.wordcamp.org/files/2019/08/footer-sep-mobile.png); */
@@ -889,6 +889,11 @@ body:not(.twentyseventeen-front-page) .entry-content {
 	display: inline-block;
 }
 
+#subscribe-submit {
+	position: relative;
+	left: -6px;
+}
+
 #subscribe-email input[type="email"] {
 	height: 50px;
 	background-color: #fff;
@@ -907,9 +912,6 @@ body:not(.twentyseventeen-front-page) .entry-content {
 	border-radius: 0 10px 10px 0;
 	padding: 0 15px;
 	height: 50px;
-	position: relative;
-	left: -6px;
-    top: 0;
 }
 
 .site-footer .widget-column.footer-widget-2 .widget_blog_subscription button[type="submit"]:hover {
@@ -2389,15 +2391,7 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
     padding-top: 0;
     height: 1px;
 }
-.wp-block-separator.is-style-wide {
-	border: 0;
-	background: none;
-	background-image: url(https://2019.taipei.wordcamp.org/files/2019/08/footer-sep-02.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	padding-top: 8%;
-}
+
 .wp-block-separator.is-style-dots {
 	border-bottom: 5px dotted #FDD000;
 }
@@ -2425,10 +2419,10 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 	max-width: 100% !important;
 }
 @media screen and (max-width: 450px) {
-  .wp-block-separator.is-style-wide {
+  /* .wp-block-separator.is-style-wide {
     background-image: url(https://2019.taipei.wordcamp.org/files/2019/08/footer-sep-mobile-02.png);
 		padding-top: 12%;
-  }
+  } */
 	.wp-block-separator.is-style-full {
 		background-image: url(https://2019.taipei.wordcamp.org/files/2019/08/footer-sep-mobile-03.png);
 		padding-top: 12%;

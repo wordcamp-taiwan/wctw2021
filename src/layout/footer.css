@@ -2,19 +2,19 @@
 	margin-top: 0;
 	border: 0;
 }
-.site-footer:before {
-	content: "";
-	display: block;
+/* .site-footer:before { */
+	/* content: ""; */
+	/* display: block; */
 	/* background-image: url(https://2019.taipei.wordcamp.org/files/2019/08/footer-sep.png); */
-	background-size: 95%;
-	background-repeat: no-repeat;
-	background-position: center;
-	width: 100%;
-	max-width: 1200px;
-	padding-top: 8%;
+	/* background-size: 95%; */
+	/* background-repeat: no-repeat; */
+	/* background-position: center; */
+	/* width: 100%; */
+	/* max-width: 1200px; */
+	/* padding-top: 8%; */
 	/* padding-top: calc( 100% * 2 / 3 ); */
-	margin: 0 auto;
-}
+	/* margin: 0 auto; */
+/* } */
 @media screen and (max-width: 450px) {
   .site-footer:before {
     /* background-image: url(https://2019.taipei.wordcamp.org/files/2019/08/footer-sep-mobile.png); */
@@ -103,6 +103,11 @@
 	display: inline-block;
 }
 
+#subscribe-submit {
+	position: relative;
+	left: -6px;
+}
+
 #subscribe-email input[type="email"] {
 	height: 50px;
 	background-color: #fff;
@@ -121,9 +126,6 @@
 	border-radius: 0 10px 10px 0;
 	padding: 0 15px;
 	height: 50px;
-	position: relative;
-	left: -6px;
-    top: 0;
 }
 
 .site-footer .widget-column.footer-widget-2 .widget_blog_subscription button[type="submit"]:hover {
