@@ -1610,8 +1610,8 @@ header#masthead.site-header {
 
 .navigation-top .menu>.current-menu-item>a,
 .navigation-top .menu>.current_page_item>a {
-	color: #000;
-	background-color: #ffd708;
+	color: #fff;
+	background-color: #ddd;
 }
 
 @media screen and (min-width:40em) {
