@@ -124,13 +124,14 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 	top: 40vh;
 	right: 0;
 	display: inline-block;
-	z-index: 99;
-	background-color: #bfdead;
+	z-index: 1001;
+	background-color: #23459a;
 	padding: 10px 10px 10px 30px;
 	border-radius: 3px 0 0 3px;
 }
 
 .fixed-quick-link-label {
+	color: #fff;
 	position: absolute;
 	-webkit-transform: rotate(-90deg);
 	    -ms-transform: rotate(-90deg);
@@ -309,6 +310,12 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 .heading-bracket {
     display: auto;
     text-align: center;
+}
+
+.heading-bracket h1,
+.heading-bracket h2,
+.heading-bracket h3 {
+	max-width: calc( 100% - 154px );
 }
 
 .heading-bracket .wp-block-group__inner-container {

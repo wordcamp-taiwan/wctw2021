@@ -86,6 +86,11 @@
 	text-decoration: none;
 	color: #ffffff;
 	transition: all .2s ease-in-out;
+	margin-right: 20px;
+}
+
+.entry-content .wp-block-button__link:last-child {
+	margin-right: 0;
 }
 
 /*網站單獨按鈕樣式*/
