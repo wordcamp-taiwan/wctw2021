@@ -701,3 +701,25 @@ body:not(.twentyseventeen-front-page) .entry-content {
 	}
 	
 }
+
+.wcorg-organizers {
+	background-color: #fdd000;
+	border-radius: 16px;
+	box-shadow: 0px 0px 9px #000;
+}
+.wcorg-organizer {
+	text-align: center;
+}
+.avatar {
+	border-radius: 50%;
+}
+.wp-block-button .wp-block-button__link {
+	display: block;
+	width: 75%;
+	margin: auto;
+	padding: 10px;
+	background-color: #000;
+	color: #fff;
+	border-radius: 16px;
+	text-decoration: none;
+}
