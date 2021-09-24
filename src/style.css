@@ -79,8 +79,9 @@ h4.sponsor-level-title {
 	font-size: 28px;
 }
 
-h2:not(.widget-title):not(.home_info_sub):before,
-h4.sponsor-level-title:before {
+h2:not(.widget-title):not(.home_info_sub)::before,
+h3.heading-star::before,
+h4.sponsor-level-title::before {
 	content: '';
 	display: inline-block;
 	width: 28px;
@@ -101,6 +102,19 @@ h4.heading-yellow:before {
 	background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/heading-yellow.png);
 }
 
+h3.heading-star {
+	display: flex;
+	font-weight: 500;
+    font-size: 24px;
+	align-items: center;
+}
+
+h3.heading-star::before {
+	background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/h3.png);
+	width: 37px;
+	margin-right: 20px;
+}
+
 h2.entry-title a {
 	color: #6b9bd2;
 }
@@ -114,7 +128,7 @@ h2.entry-title a:hover {
 	display: none;
 }
 
-h3:not(.sd-title) {
+h3 {
 	color: #000;
 	font-size: 28px;
 	padding: 0 0 0 10px;
