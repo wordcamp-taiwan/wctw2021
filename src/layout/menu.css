@@ -124,7 +124,7 @@
 .navigation-top .menu>.current-menu-item>a,
 .navigation-top .menu>.current_page_item>a {
 	color: #fff;
-	background-color: #ddd;
+	background-color: #666;
 }
 
 @media screen and (min-width:40em) {

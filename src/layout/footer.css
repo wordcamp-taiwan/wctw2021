@@ -126,6 +126,7 @@
 	border-radius: 0 10px 10px 0;
 	padding: 0 15px;
 	height: 50px;
+	margin-bottom: -1px;
 }
 
 .site-footer .widget-column.footer-widget-2 .widget_blog_subscription button[type="submit"]:hover {
@@ -405,6 +406,10 @@ body:not(.twentyseventeen-front-page):not(.page-slug-sponsors) .site-footer .wcb
 	color: #fff;
 	margin-bottom: 1.5em !important;
 	text-decoration: none;
+}
+
+.site-info>.privacy-policy-link:hover {
+	color: #666;
 }
 
 .site-info>.privacy-policy-link+span {
