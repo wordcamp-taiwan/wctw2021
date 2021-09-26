@@ -2858,7 +2858,7 @@ article#panel4 {
 
 /*網站各個按鈕樣式*/
 .entry-content .wp-block-button__link {
-	background-color: #23459A;
+	background-color: #000; /* #23459A */
 	border: 2px solid #060606;
 	border-radius: 10px;
 	color: #fff;
