@@ -2603,7 +2603,6 @@ article#panel2	.wp-block-column.row-right {
 }
 
 .twentyseventeen-front-page .panel-content .recent-posts article {
-    border: 2px solid;
     color: #333;
     margin-bottom: 2em;
     background: #fccc03;
@@ -2618,6 +2617,8 @@ article#panel2	.wp-block-column.row-right {
 
 .twentyseventeen-front-page .panel-content .recent-posts article .entry-header {
     margin-bottom: 0;
+	border: 2px solid;
+	border-radius: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
