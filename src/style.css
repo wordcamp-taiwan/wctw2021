@@ -734,3 +734,7 @@ body:not(.twentyseventeen-front-page) .entry-content {
 	background-color: #fdd708;
 	box-shadow: 0 5px;
 }
+/* Organizer 樣式 */
+.wcorg-organizer-description .wp-block-buttons {
+    justify-content: center;
+}
