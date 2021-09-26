@@ -141,11 +141,11 @@ h3 {
 }
 
 h4:not(.sponsor-level-title), h5, h6, p, ul, ol, li {
-	color: #717071;
+	color: #060606;
 }
 
 blockquote.wp-block-quote.is-style-info p {
-	color: #4b4848;
+	color: #060606;
 }
 .EN {
 	font-family: "Work Sans";
@@ -2786,6 +2786,10 @@ article#panel4 {
 @media screen and (max-width: 768px) {
 	.page .site-main {
 		padding: 0 20px;
+	}
+
+	.page.twentyseventeen-front-page #panel1 .wp-block-group p {
+		width: calc( 100% - 80px);
 	}
 }
 /* homepage panel styling */

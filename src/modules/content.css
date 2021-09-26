@@ -2,6 +2,10 @@
 	.page .site-main {
 		padding: 0 20px;
 	}
+
+	.page.twentyseventeen-front-page #panel1 .wp-block-group p {
+		width: calc( 100% - 80px);
+	}
 }
 /* homepage panel styling */
 .page.twentyseventeen-front-page .twentyseventeen-panel .wrap > .entry-header {
