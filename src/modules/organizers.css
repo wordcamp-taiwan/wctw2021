@@ -21,6 +21,7 @@
 
 .wcorg-organizer-description .wp-block-buttons {
     justify-content: center;
+	margin-bottom: 1em;
 }
 
 @media screen and (min-width:48em) {
@@ -40,11 +41,12 @@
 	        flex: 1 0 100%;
 }
 
-.wcorg-organizer h2 {
+.wcorg-organizer h2:not(.widget-title):not(.home_info_sub) {
 	top: 1em;
 	z-index: 0;
-	color: #6b9bd2;
 	font-size: 1.5rem;
+	display: block;
+    text-align: center;
 }
 
 div.wcorg-organizers div.wcorg-organizer h2:before {

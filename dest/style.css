@@ -722,23 +722,34 @@ body:not(.twentyseventeen-front-page) .entry-content {
 
 .wcorg-organizers {
 	background-color: #fdd000;
+	border: 2px solid #000;
 	border-radius: 16px;
-	-webkit-box-shadow: 0px 0px 9px #000;
-	        box-shadow: 0px 0px 9px #000;
+	-webkit-box-shadow: 0px 5px 0 #000;
+	        box-shadow: 0px 5px 0 #000;
 }
 .wcorg-organizer {
 	text-align: center;
 }
+
+.wcorg-organizer p {
+	text-align: left;
+}
+
 .avatar {
 	border-radius: 50%;
 }
 .wp-block-button .wp-block-button__link {
 	margin: auto;
 	padding: 10px;
-	background-color: #000;
 	color: #fff;
 	border-radius: 16px;
 	text-decoration: none;
+}
+
+.home_about_but .wp-block-button__link {
+	background-color: #fdd708;
+	-webkit-box-shadow: 0 5px;
+	        box-shadow: 0 5px;
 }
 /* hide single post sidebar & adjust blog layout */
 #page #secondary {
@@ -2998,6 +3009,7 @@ select {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+	margin-bottom: 1em;
 }
 
 @media screen and (min-width:48em) {
@@ -3017,11 +3029,12 @@ select {
 	        flex: 1 0 100%;
 }
 
-.wcorg-organizer h2 {
+.wcorg-organizer h2:not(.widget-title):not(.home_info_sub) {
 	top: 1em;
 	z-index: 0;
-	color: #6b9bd2;
 	font-size: 1.5rem;
+	display: block;
+    text-align: center;
 }
 
 div.wcorg-organizers div.wcorg-organizer h2:before {
