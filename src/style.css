@@ -110,6 +110,15 @@ h2.entry-title a:hover {
 	box-shadow: none;
 	background: linear-gradient(transparent 60%,#FFE792 0);
 }
+.entry-header{
+	margin-bottom: 0;
+   	display: -webkit-box;
+    	display: -ms-flexbox;
+   	-ms-flex-pack: justify;
+  	justify-content: space-between;
+  	-ms-flex-align: center;
+  	align-items: center;
+  	padding: 24px 30px;}
 
 .wcorg-organizer h2::before {
 	display: none;
