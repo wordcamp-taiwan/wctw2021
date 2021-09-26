@@ -315,7 +315,7 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 .heading-bracket h1,
 .heading-bracket h2,
 .heading-bracket h3 {
-	max-width: calc( 100% - 154px );
+	max-width: calc( 100% - 148px );
 }
 
 .heading-bracket .wp-block-group__inner-container {
