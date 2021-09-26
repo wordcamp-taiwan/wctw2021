@@ -18,6 +18,10 @@
 	margin-bottom: 1.5rem;
 }
 
+.wcorg-organizer-description .wp-block-buttons {
+    justify-content: center;
+}
+
 @media screen and (min-width:48em) {
 	.wcorg-organizers {
 		margin-top: 2em !important;

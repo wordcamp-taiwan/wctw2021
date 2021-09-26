@@ -628,7 +628,7 @@ article#panel2 .wp-block-image figure.alignright {
 
 article#panel2	.wp-block-column.row-right {
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .wp-block-column.row-right .has-text-color {
