@@ -77,7 +77,7 @@ h4[class^="heading-"]::before {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	width: 28px;
+	min-width: 28px;
 	height: 37px;
 	background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/vector-38.png);
 	background-size: contain;
@@ -107,7 +107,7 @@ h3.heading-star {
 
 h3.heading-star::before {
 	background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/h3.png);
-	width: 37px;
+	min-width: 37px;
 	margin-right: 20px;
 }
 
@@ -1156,7 +1156,7 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
  * Heading Group - Heading Brackets
  */
 .heading-bracket {
-    display: auto;
+    display: block;
     text-align: center;
 }
 
@@ -1473,7 +1473,7 @@ li.wordcamp-post-list__post.wordcamp-clearfix:last-child {
 
 article#panel2 .wp-block-columns.has-2-columns.row-full-width.about_bg {
 	background-color: #dffdff;
-  background-image: url(https://2019.taipei.wordcamp.org/files/2019/08/about_bg_h500.png);
+  background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/wctw-kv-bg.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0 20px;
@@ -1515,20 +1515,20 @@ article#panel2	.wp-block-column.row-right {
     margin: 0 auto;
   }
   article#panel2 .wp-block-columns.has-2-columns.row-full-width.about_bg:before {
-    background-image: url('https://2019.taipei.wordcamp.org/files/2019/08/about_bg_h174.png');
-    background-size: auto 100%;
-    background-repeat: no-repeat;
+    background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/wctw-kv-bg.jpeg);
+    background-size: 10px;
+    background-repeat: repeat;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    width: 55%;
+    width: 100%;
     content: "";
     display: inline-block;
   }
 
 	article#panel2 {
-	  background-color: #dffdff;
+	  background-color: #fdd708;
   }
 
 	article#panel2 .wp-block-column.row-bg-wapu {

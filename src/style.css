@@ -70,7 +70,7 @@ h3[class^="heading-"]::before,
 h4[class^="heading-"]::before {
 	content: '';
 	display: flex;
-	width: 28px;
+	min-width: 28px;
 	height: 37px;
 	background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/vector-38.png);
 	background-size: contain;
@@ -98,7 +98,7 @@ h3.heading-star {
 
 h3.heading-star::before {
 	background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/h3.png);
-	width: 37px;
+	min-width: 37px;
 	margin-right: 20px;
 }
 
