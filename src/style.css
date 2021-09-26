@@ -726,7 +726,7 @@ body:not(.twentyseventeen-front-page) .entry-content {
 	text-align: left;
 }
 
-.avatar {
+.wcorg-organizer img.avatar {
 	border-radius: 50%;
 }
 /* 按鈕 */
