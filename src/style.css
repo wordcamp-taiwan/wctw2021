@@ -739,16 +739,12 @@ body:not(.twentyseventeen-front-page) .entry-content {
 }
 
 /* 關於 WordCamp 按鈕 */
-.home_about_but .wp-block-button__link {
+.wp-block-column.row-right .home_about_but .wp-block-button__link {
 	background-color: #fdd708;
 	box-shadow: 0 5px;
+	color: #000;
 }
 /* Organizer 樣式 */
 .wcorg-organizer-description .wp-block-buttons {
     justify-content: center;
-}
-
-.home_about_but .wp-block-button__link {
-	background-color: #fdd708;
-	box-shadow: 0 5px;
 }
