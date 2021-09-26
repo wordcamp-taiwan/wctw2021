@@ -611,7 +611,6 @@ li.wordcamp-post-list__post.wordcamp-clearfix:last-child {
 }
 
 article#panel2 .wp-block-columns.has-2-columns.row-full-width.about_bg {
-	background-color: #dffdff;
   background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/wctw-kv-bg.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -686,7 +685,6 @@ article#panel4 {
 
 	article#panel2 .wp-block-columns.has-2-columns.row-full-width.about_bg {
     background: none;
-	  background-color: #dffdff;
     padding: 0;
     max-width: 860px;
     margin: 0 auto;
