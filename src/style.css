@@ -748,3 +748,8 @@ body:not(.twentyseventeen-front-page) .entry-content {
 .wcorg-organizer-description .wp-block-buttons {
     justify-content: center;
 }
+
+.wcorg-organizer-description .wp-block-buttons .wp-block-button__link {
+    border-radius: 30px;
+    background: #000;
+}

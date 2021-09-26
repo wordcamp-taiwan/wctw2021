@@ -766,6 +766,11 @@ body:not(.twentyseventeen-front-page) .entry-content {
         -ms-flex-pack: center;
             justify-content: center;
 }
+
+.wcorg-organizer-description .wp-block-buttons .wp-block-button__link {
+    border-radius: 30px;
+    background: #000;
+}
 /* hide single post sidebar & adjust blog layout */
 #page #secondary {
 	display: none;
