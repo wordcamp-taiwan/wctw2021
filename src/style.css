@@ -39,7 +39,6 @@ a, .nav-title a, .entry-content a, .entry-meta a {
 	letter-spacing: 1px !important;
 } */
 .page-header,
-.page.page-one-column .entry-header,
 .page h1.entry-title {
 	display: none;
 }
