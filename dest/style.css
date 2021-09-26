@@ -2588,7 +2588,7 @@ article#panel2 .wp-block-image figure.alignright {
 
 article#panel2	.wp-block-column.row-right {
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .wp-block-column.row-right .has-text-color {
@@ -2990,6 +2990,12 @@ select {
 	        justify-content: flex-start;
 	-webkit-justify-content: flex-start;
 	margin-bottom: 1.5rem;
+}
+
+.wcorg-organizer-description .wp-block-buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 @media screen and (min-width:48em) {
