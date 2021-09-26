@@ -24,9 +24,6 @@
   margin: 15px 0px;
   color: #6b9bd2;
 }
-.twentyseventeen-front-page article:not(.has-post-thumbnail):not(:first-child):not(:last-child) {
-  border-bottom: 5px dotted #FDD000;
-}
 
 /* 首頁about 區塊移除 dotted line*/
 .twentyseventeen-front-page article#panel1, .twentyseventeen-front-page article#panel2 {
