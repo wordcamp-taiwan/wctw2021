@@ -103,6 +103,9 @@ h3.heading-star {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 }
 
 h3.heading-star::before {
@@ -2905,6 +2908,14 @@ select {
 	border:  1px solid #060606;
     border-radius: 10px;
     background: rgba(253, 215, 8, 0.1);
+}
+
+.contact-form input[type=email],
+.contact-form input[type=tel],
+.contact-form input[type=text],
+.contact-form input[type=url],
+.contact-form textarea {
+  width: 50%;
 }
 
 .contact-form input[type=email],
