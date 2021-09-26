@@ -605,9 +605,9 @@ li.wordcamp-post-list__post.wordcamp-clearfix:last-child {
 
 /* Home_about section*/
 #panel2 .wrap {
-	padding: 0;
+	padding: 30px 0;
 	margin: 0;
-  max-width: none;
+  	max-width: none;
 }
 
 article#panel2 .wp-block-columns.has-2-columns.row-full-width.about_bg {
@@ -643,6 +643,9 @@ article#panel2	.wp-block-column.row-right {
   outline-offset: -2px;
 }
 
+article#panel4 {
+	background-color: #1ea85811;
+}
 
 @media (min-width: 600px) {
 
@@ -676,7 +679,6 @@ article#panel2	.wp-block-column.row-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 150px;
   }
 
 
@@ -688,22 +690,8 @@ article#panel2	.wp-block-column.row-right {
     flex-direction: column;
     justify-content: center;
   }
-  article#panel2 .wp-block-column.row-right:before {
-    background-image: url('https://2019.taipei.wordcamp.org/files/2019/08/dialog_box_bg3.png');
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    left: -150px;
-    height: 100%;
-    width: 100%;
-    content: "";
-    display: inline-block;
-    z-index: -1;
-  }
-
 	.wp-block-column.row-right .has-text-color {
-		font-size: 16px;
+	font-size: 16px;
     background-color:transparent;
     border:none;
     outline:0;
@@ -721,8 +709,7 @@ article#panel2	.wp-block-column.row-right {
 
 /* Block editor - blockquote */
 .wp-block-pullquote:not(.is-style-solid-color) {
-  background-image: url('https://2019.taipei.wordcamp.org/files/2019/08/about_bg_h500.png');
-  background-color: #dffdff;
+  background-color: #fdd708;
   /* border: 5px dotted #FDD000; */
   border: 0;
   background-repeat: no-repeat;
