@@ -643,6 +643,41 @@ article#panel2	.wp-block-column.row-right {
   outline-offset: -2px;
 }
 
+.twentyseventeen-front-page .panel-content .recent-posts article {
+    border: 2px solid;
+    color: #333;
+    margin-bottom: 2em;
+    background: #fccc03;
+    border-radius: 10px;
+    box-shadow: 0 5px;
+}
+
+.twentyseventeen-front-page .panel-content .recent-posts article .entry-summary {
+    display: none;
+}
+
+.twentyseventeen-front-page .panel-content .recent-posts article .entry-header {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 30px;
+}
+
+.twentyseventeen-front-page .panel-content .recent-posts article .entry-header .entry-meta {
+    order: 2;
+}
+
+.twentyseventeen-front-page .panel-content .recent-posts article .entry-title {
+    font-size: 16px;
+    margin: 0;
+}
+
+.panel-content .recent-posts article .entry-title a {
+	text-decoration: none;
+	box-shadow: none;
+}
+
 article#panel4 {
 	background-color: #1ea85811;
 }

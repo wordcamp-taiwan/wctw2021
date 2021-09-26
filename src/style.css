@@ -19,10 +19,14 @@ ol,ul {
 	margin-left: 2em;
 }
 
-a, .nav-title a, .entry-content a, .entry-meta a {
+a, .nav-title a, .entry-content a {
 	text-decoration: none;
 	color: #6b9bd2;
 	box-shadow: none;
+}
+
+.entry-meta a {
+	color: #000;
 }
 
 /* h1:not(.site-title):not(.home_info_title), h1.entry-title:not(:first-child), .page .panel-content .entry-title, .page-title, body.page:not(.twentyseventeen-front-page) .entry-title, .site-footer .widget-column.footer-widget-1 h2.widget-title {
