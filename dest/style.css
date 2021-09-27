@@ -2099,13 +2099,13 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 .fixed-quick-link {
 	position: fixed;
 	top: 40%;
-	top: 40vh;
-	right: 0;
-	display: inline-block;
-	z-index: 1001;
-	background-color: #23459a;
-	padding: 10px 10px 10px 30px;
-	border-radius: 3px 0 0 3px;
+	top: 70vh;
+    right: 0;
+    display: inline-block;
+    z-index: 1001;
+    background-color: #23459a;
+    padding: 10px 10px 10px 22px;
+    border-radius: 3px 0 0 3px;
 }
 
 .fixed-quick-link-label {
@@ -2115,10 +2115,11 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 	    -ms-transform: rotate(-90deg);
 	        transform: rotate(-90deg);
 /* 	top: 0; */
-	bottom: 40px;
+	bottom: 42px;
+	font-size: 12px;
 	white-space: nowrap;
 /* 	left: 0; */
-	right: 15px;
+	right: 12px;
 	text-transform: uppercase;
 	font-weight: bold;
 	pointer-events: none;
@@ -2136,7 +2137,7 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 }
 
 .fixed-quick-link a:not(:last-child) {
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 
 .fixed-quick-link a:hover {
@@ -2148,7 +2149,7 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 }
 
 .fixed-quick-link img {
-	width: 32px;
+	width: 26px;
 	height: auto;
 	-webkit-box-shadow: none !important;
 	        box-shadow: none !important;
@@ -3009,7 +3010,9 @@ button:not([name="jetpack_subscriptions_widget"]):not(.menu-toggle):not(.dropdow
 	background: linear-gradient(145DEG,#7BC16D,#20AB41);
 	transition: all .2s ease-in-out;
 } */
-/* 
+#top-menu .dropdown-toggle {
+  color: #fff;
+}
 
 /* form input fields */
 input[type="text"],
