@@ -2633,7 +2633,10 @@ li.wordcamp-post-list__post.wordcamp-clearfix:last-child {
 }
 
 @media screen and ( max-width: 768px ) {
-    #panel1 .wp-block-columns .wp-block-column:first-child div,
+    #panel1 .wp-block-columns .wp-block-column:first-child div {
+		margin: 0 auto 1em;
+	}
+
 	#panel1 .wp-block-columns .wp-block-column:last-child div {
         margin: auto;
     }
