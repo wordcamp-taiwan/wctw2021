@@ -2403,13 +2403,18 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 	.wp-block-columns.pink-square-group {
 		display: grid;
 		grid-gap: 15px;
-		grid-template-columns: repeat(2, 130px);
+		grid-template-columns: repeat(2, 150px);
 	}
 	.pink-square {
-		height: 122px;
+		height: 142px;
 	}
 	.entry-content .pink-square .wp-block-button__link {
 		padding: 0.5em;
+	}
+
+	.entry-content .pink-square .wp-block-button__link span.text-en {
+		font-size: 13px;
+		white-space: pre-wrap;
 	}
 }
 
