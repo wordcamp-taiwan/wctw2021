@@ -121,13 +121,13 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 .fixed-quick-link {
 	position: fixed;
 	top: 40%;
-	top: 40vh;
-	right: 0;
-	display: inline-block;
-	z-index: 1001;
-	background-color: #23459a;
-	padding: 10px 10px 10px 30px;
-	border-radius: 3px 0 0 3px;
+	top: 70vh;
+    right: 0;
+    display: inline-block;
+    z-index: 1001;
+    background-color: #23459a;
+    padding: 10px 10px 10px 22px;
+    border-radius: 3px 0 0 3px;
 }
 
 .fixed-quick-link-label {
@@ -137,10 +137,11 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 	    -ms-transform: rotate(-90deg);
 	        transform: rotate(-90deg);
 /* 	top: 0; */
-	bottom: 40px;
+	bottom: 42px;
+	font-size: 12px;
 	white-space: nowrap;
 /* 	left: 0; */
-	right: 15px;
+	right: 12px;
 	text-transform: uppercase;
 	font-weight: bold;
 	pointer-events: none;
@@ -158,7 +159,7 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 }
 
 .fixed-quick-link a:not(:last-child) {
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 
 .fixed-quick-link a:hover {
@@ -170,7 +171,7 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 }
 
 .fixed-quick-link img {
-	width: 32px;
+	width: 26px;
 	height: auto;
 	-webkit-box-shadow: none !important;
 	        box-shadow: none !important;
@@ -355,6 +356,9 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 @media screen and ( max-width: 48em ) {
 	.heading-bracket h2.has-text-align-center {
 		max-width: calc( 100% - 80px );
+	}
+	article#panel2 .wp-block-columns.has-2-columns.row-full-width.about_bg {
+		padding: 20px;
 	}
 }
 
@@ -603,6 +607,42 @@ li.wordcamp-post-list__post.wordcamp-clearfix:last-child {
 	font-size: 20px;
 }
 
+/* #panel1 */
+#panel1 .wp-block-columns {
+
+}
+#panel1 .wp-block-columns .wp-block-column:first-child div {
+	margin-left: auto;
+	margin-bottom: 1em;
+	text-align: center;
+	width: 303px;
+	height: 162px;
+	background: #FDD708;
+	border: 2px solid #060606;
+	border-radius: 8px;
+	padding-top: 20px;
+	line-height: 0.5
+}
+
+#panel1 .wp-block-columns .wp-block-column:last-child div {
+	text-align: center;
+	width: 303px;
+	height: 162px;
+	background: #23459a;
+	color:#fff;
+	border: 2px solid #060606;
+	border-radius: 8px;
+	padding-top: 20px;
+	line-height: 0.5;
+}
+
+@media screen and ( max-width: 768px ) {
+    #panel1 .wp-block-columns .wp-block-column:first-child div,
+	#panel1 .wp-block-columns .wp-block-column:last-child div {
+        margin: auto;
+    }
+}
+
 /* Home_about section*/
 #panel2 .wrap {
 	padding: 30px 0;
@@ -612,8 +652,8 @@ li.wordcamp-post-list__post.wordcamp-clearfix:last-child {
 
 article#panel2 .wp-block-columns.has-2-columns.row-full-width.about_bg {
   background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/wctw-kv-bg.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: 10px;
+  background-repeat: repeat;
   padding: 0 20px;
 }
 
@@ -633,13 +673,7 @@ article#panel2	.wp-block-column.row-right {
 
 .wp-block-column.row-right .has-text-color {
   padding-top: 0px;
-  margin: 10px;
   font-size: 16px;
-
-  background-color: #dffdff;
-  border: 8px solid #dffdff;
-  outline: 2px solid #adeef3;
-  outline-offset: -2px;
 }
 
 .twentyseventeen-front-page .panel-content .recent-posts article {
@@ -676,6 +710,16 @@ article#panel2	.wp-block-column.row-right {
 .panel-content .recent-posts article .entry-title a {
 	text-decoration: none;
 	box-shadow: none;
+}
+
+@media screen and ( max-width: 768px ) {
+    .twentyseventeen-front-page .panel-content .recent-posts article .entry-header {
+		padding: 8px 16px;
+		text-align: left;
+	}
+	.twentyseventeen-front-page .panel-content .recent-posts article .entry-title {
+		flex: 100%;
+	}
 }
 
 article#panel4 {
