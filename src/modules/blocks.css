@@ -358,7 +358,7 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 		max-width: calc( 100% - 80px );
 	}
 	article#panel2 .wp-block-columns.has-2-columns.row-full-width.about_bg {
-		padding: 20px;
+		padding: 20px !important;
 	}
 }
 
