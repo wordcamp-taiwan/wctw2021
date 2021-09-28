@@ -3059,6 +3059,12 @@ select {
 .contact-form input[type=url] {
     width: 100%;
 }
+
+@media (prefers-color-scheme: dark) {
+  option {
+    color: #fff;
+  }
+}
 .wcorg-organizers {
 	margin-top: 1em !important;
 	border: 2px solid #000;
