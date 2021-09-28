@@ -74,3 +74,9 @@ select {
 .contact-form input[type=url] {
     width: 100%;
 }
+
+@media (prefers-color-scheme: dark) {
+  option {
+    color: #fff;
+  }
+}
