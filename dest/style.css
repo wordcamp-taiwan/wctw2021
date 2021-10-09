@@ -210,11 +210,14 @@ blockquote.wp-block-quote.is-style-info p {
 	.CHT p {
 		font-size: 16px;
 	}
+<<<<<<< Updated upstream
 .shadow,
 .entry-content a.shadow {
 	-webkit-box-shadow: 0px 4px;
 	        box-shadow: 0px 4px;
 }
+=======
+>>>>>>> Stashed changes
 
 .pencil::before {
 	background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/Group-1.png");
@@ -703,6 +706,7 @@ blockquote.wp-block-quote.is-style-info p {
 	border: black 2px solid;
 	border-radius: 15px;
 }
+<<<<<<< Updated upstream
 
 @media screen and ( min-width: 48em ) {
 	.wrap {
@@ -710,6 +714,8 @@ blockquote.wp-block-quote.is-style-info p {
 	}
 	
 }
+=======
+>>>>>>> Stashed changes
 /* hide single post sidebar & adjust blog layout */
 #page #secondary {
 	display: none;
