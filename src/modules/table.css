@@ -20,7 +20,8 @@
 	width: 50%;
 }
 
-.table-sponsor.sp td,.table-sponsor.sp th {
+.table-sponsor.sp td,
+.table-sponsor.sp th {
 	text-align: left;
 	padding: 3px 5px;
 	border-bottom: none;
@@ -53,7 +54,8 @@
   .entry-content table tr {
   	border-bottom: 1px solid #6b9bd2;
   }
-  .entry-content table td,.entry-content table th {
+  .entry-content table td,
+  .entry-content table th {
   	text-align: center;
   	padding: 10px;
   	line-height: 140%;
