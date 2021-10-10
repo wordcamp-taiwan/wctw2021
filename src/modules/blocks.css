@@ -443,6 +443,7 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 	white-space: nowrap;
 	margin-bottom:0px;
 	font-weight:700;
+	padding-top: 0px;
 }
 
 .heading-bracket .wp-block-group__inner-container_header {

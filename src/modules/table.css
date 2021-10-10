@@ -1,77 +1,143 @@
 .table-sponsor a {
-	color: #0068b6;
+    color: #0068b6;
 }
+
 .table-sponsor h3 {
-	margin: 1.5em 0 1em;
-	color: #6b9bd2;
-	padding: 0;
+    margin: 1.5em 0 1em;
+    color: #6b9bd2;
+    padding: 0;
 }
 
 .table-sponsor.pc {
-	display: none;
+    display: none;
 }
 
 .table-sponsor.sp th {
-	vertical-align: top;
-	background: none;
+    vertical-align: top;
+    background: none;
 }
 
 .table-sponsor.sp td {
-	width: 50%;
+    width: 50%;
 }
 
-.table-sponsor.sp td,.table-sponsor.sp th {
-	text-align: left;
-	padding: 3px 5px;
-	border-bottom: none;
+.table-sponsor.sp td,
+.table-sponsor.sp th {
+    text-align: left;
+    padding: 3px 5px;
+    border-bottom: none;
 }
 
 .table-sponsor.sp tr {
-	border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 }
 
 .table-sponsor.sp tr:first-of-type {
-	background: #d3ebf5;
-	border-bottom: 1px solid #6b9bd2;
+    background: #d3ebf5;
+    border-bottom: 1px solid #6b9bd2;
 }
 
 .table-sponsor.sp tr:last-of-type {
-	border-bottom: 1px solid #6b9bd2;
+    border-bottom: 1px solid #6b9bd2;
 }
 
 @media screen and (min-width:768px) {
-	.table-sponsor.sp {
-		display: none;
-	}
-
-	.table-sponsor.pc {
-		display: block;
-	}
-  .entry-content table th {
-  	background: #d3ebf5;
-  }
-  .entry-content table tr {
-  	border-bottom: 1px solid #6b9bd2;
-  }
-  .entry-content table td,.entry-content table th {
-  	text-align: center;
-  	padding: 10px;
-  	line-height: 140%;
-  }
+    .table-sponsor.sp {
+        display: none;
+    }
+    .table-sponsor.pc {
+        display: block;
+    }
+    .entry-content table th {
+        background: #d3ebf5;
+    }
+    .entry-content table tr {
+        border-bottom: 1px solid #6b9bd2;
+    }
+    .entry-content table td,
+    .entry-content table th {
+        text-align: center;
+        padding: 10px;
+        line-height: 140%;
+    }
 }
 
 .table-sponsor .font-s {
-	font-size: 90%;
+    font-size: 90%;
 }
 
 .table-sponsor .cell-s {
-	width: 5%;
+    width: 5%;
 }
 
 .table-sponsor .cell-m {
-	width: 24.5%;
+    width: 24.5%;
 }
 
 .table-sponsor .cell-l {
-	width: 40%;
+    width: 40%;
 }
+
+
+/*schedule-table v1  2021-10-10*/
+
+figure.schedule-table {
+    width: 100% !important;
+}
+
+.schedule-table>table {
+    border-collapse: separate;
+    border-spacing: 0;
+    /*border-collapse: collapse;*/
+}
+
+.schedule-table>table>thead>tr {}
+
+.wp-block-table th {
+    border: none !important;
+}
+
+.entry-content table th {
+    background: #23459A !important;
+    color: white !important;
+}
+
+.schedule-table>table>thead>tr>th {
+    box-shadow: inset 0px 2px black;
+    padding: 1em;
+}
+
+.schedule-table>table>thead>tr>th:first-child {
+    border-top-left-radius: 8px;
+    width: 12%;
+    box-shadow: inset 2px 2px black;
+}
+
+.schedule-table>table>thead>tr>th:last-child {
+    border-top-right-radius: 10px;
+    box-shadow: inset -2px 2px black;
+}
+
+.schedule-table>table>thead>tr>th:not(:first-child) {
+    width: 22%;
+}
+
+.schedule-table>table>tbody>tr>td:first-child {
+    background: #FDD708;
+    box-shadow: inset 2px 0px #000;
+}
+
+.schedule-table>table>tbody>tr>td:second-child {
+    box-shadow: inset 2px 0px #000;
+}
+
+.entry-content table tr {
+    border: none;
+}
+
+.schedule-table>table>tbody>tr>td {
+    border: 1px solid black;
+}
+
+
+/*end- schedule-table v1  2021-10-10*/
