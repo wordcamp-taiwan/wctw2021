@@ -305,6 +305,40 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
     color: #666;
 }
 
+.heading-group h3 {
+    line-height: 1;
+}
+
+.heading-group h3.has-text-align-center::before {
+    content: '';
+    display: none;
+}
+
+.heading-group h3.has-text-align-center {
+    display: block;
+    padding-top: 10px;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.heading-group h3 span {
+    font-size: 28px;
+    color: #666;
+}
+
+.heading-group h3.h3-28px{
+	font-size: 28px;
+	line-height: 42px;
+}
+
+.heading-group h3.h3-28px span.text-en{
+	font-size: 24px;
+	color:#666;
+	font-weight: 100;
+	line-height: 36px;
+}
+
 /**
  * Heading Group - Heading Brackets
  */
@@ -317,6 +351,7 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 .heading-bracket h2,
 .heading-bracket h3 {
 	max-width: calc( 100% - 148px );
+
 }
 
 .heading-bracket .wp-block-group__inner-container {
@@ -352,6 +387,88 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
     -ms-transform: scaleX(-1);
     transform: scaleX(-1);
 }
+
+/*start - call for speakers 2021*/
+.heading-bracket .wp-block-group__inner-container_language {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.heading-bracket .wp-block-group__inner-container_language::before,
+.heading-bracket .wp-block-group__inner-container_language::after {
+	content: '';
+    display: inline-block;
+	width: 16px !important;
+    height: 24px !important;
+    margin-right: 1rem !important;
+	margin-left: 1rem !important;
+	background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.heading-bracket .wp-block-group__inner-container_language::before {
+    background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/vector-40.png);
+    background-size: contain;
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+
+.heading-bracket .wp-block-group__inner-container_language::after {
+    background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/vector-40.png);
+    content: "";
+    display: inline-block;
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.heading-bracket h3.header {
+	max-width: calc( 100% );
+	white-space: nowrap;
+	margin-bottom: 0;
+	padding-top: 0;
+	font-weight: 700;
+}
+
+.heading-bracket .wp-block-group__inner-container_header {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.heading-bracket .wp-block-group__inner-container_header::before,
+.heading-bracket .wp-block-group__inner-container_header::after {
+	content: '';
+    display: inline-block;
+	width: 16px !important;
+	width: 20px!important;
+    height: 50px!important;
+	background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.heading-bracket .wp-block-group__inner-container_header::before {
+    background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/vector-40.png);
+    background-size: contain;
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+
+.heading-bracket .wp-block-group__inner-container_header::after {
+    background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/vector-40.png);
+    content: "";
+    display: inline-block;
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+
+/*end - call for speakers 2021*/
 
 @media screen and ( max-width: 48em ) {
 	.heading-bracket h2.has-text-align-center {
