@@ -2155,6 +2155,20 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 	        box-shadow: none !important;
 }
 
+.fixed-quick-link-recruit {
+    position: fixed;
+    top: 40%;
+    top: 70vh;
+    right: 0;
+    display: inline-block;
+    z-index: 1001;
+}
+
+.fixed-quick-link-recruit img {
+    width: 50px;
+    height: auto;
+}
+
 /* Block editor - seperator */
 .language-tag {
 	position: relative;
