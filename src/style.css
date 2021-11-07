@@ -729,6 +729,9 @@ body:not(.twentyseventeen-front-page) .entry-content {
 	border-radius: 16px;
 	text-decoration: none;
 }
+.entry-content .wp-block-button__link {
+	background-color: #000;
+}
 /* 關於 WordCamp 按鈕 */
 .home_about_but .wp-block-button__link {
 	background-color: #fdd708;
@@ -737,4 +740,9 @@ body:not(.twentyseventeen-front-page) .entry-content {
 /* Organizer 樣式 */
 .wcorg-organizer-description .wp-block-buttons {
     justify-content: center;
+}
+
+/* 購票頁面選購數量背景顏色修正 */
+.tix_tickets_table .tix-column-quantity select {
+	background-color: #fff;
 }
