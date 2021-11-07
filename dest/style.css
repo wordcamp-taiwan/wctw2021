@@ -141,11 +141,11 @@ h3 {
 }
 
 h4:not(.sponsor-level-title), h5, h6, p, ul, ol, li {
-	color: #717071;
+	color: #060606;
 }
 
 blockquote.wp-block-quote.is-style-info p {
-	color: #4b4848;
+	color: #060606;
 }
 .EN {
 	font-family: "Work Sans";
@@ -720,25 +720,56 @@ body:not(.twentyseventeen-front-page) .entry-content {
 	
 }
 
+/* 主辦單位志工區塊 */
 .wcorg-organizers {
 	background-color: #fdd000;
+	border: 2px solid #000;
 	border-radius: 16px;
-	-webkit-box-shadow: 0px 0px 9px #000;
-	        box-shadow: 0px 0px 9px #000;
+
+	-webkit-box-shadow: 0 5px 0 #000;
+
+	        box-shadow: 0 5px 0 #000;
 }
+/* 主辦單位志工（單個志工） */
 .wcorg-organizer {
 	text-align: center;
 }
-.avatar {
+
+/* 志工頭像 */
+
+.wcorg-organizer p {
+	text-align: left;
+}
+
+.wcorg-organizer img.avatar {
 	border-radius: 50%;
 }
+/* 按鈕 */
 .wp-block-button .wp-block-button__link {
 	margin: auto;
 	padding: 10px;
-	background-color: #000;
 	color: #fff;
 	border-radius: 16px;
 	text-decoration: none;
+}
+
+/* 關於 WordCamp 按鈕 */
+.wp-block-column.row-right .home_about_but .wp-block-button__link {
+	background-color: #fdd708;
+	-webkit-box-shadow: 0 5px;
+	        box-shadow: 0 5px;
+	color: #000;
+}
+/* Organizer 樣式 */
+.wcorg-organizer-description .wp-block-buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.wcorg-organizer-description .wp-block-buttons .wp-block-button__link {
+    border-radius: 30px;
+    background: #000;
 }
 /* hide single post sidebar & adjust blog layout */
 #page #secondary {
@@ -1423,7 +1454,7 @@ header#masthead.site-header {
 
 .site-branding .site-title>a {
 	display: block;
-	background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/kv-nobg-1300.png);
+	background-image: url(https://taiwan.wordcamp.org/2021/files/2021/10/WordCamp2021_1920x1080-01-e1633797484159.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	width: 480px;
@@ -2068,13 +2099,13 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 .fixed-quick-link {
 	position: fixed;
 	top: 40%;
-	top: 40vh;
-	right: 0;
-	display: inline-block;
-	z-index: 1001;
-	background-color: #23459a;
-	padding: 10px 10px 10px 30px;
-	border-radius: 3px 0 0 3px;
+	top: 70vh;
+    right: 0;
+    display: inline-block;
+    z-index: 1001;
+    background-color: #23459a;
+    padding: 10px 10px 10px 22px;
+    border-radius: 3px 0 0 3px;
 }
 
 .fixed-quick-link-label {
@@ -2084,10 +2115,11 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 	    -ms-transform: rotate(-90deg);
 	        transform: rotate(-90deg);
 /* 	top: 0; */
-	bottom: 40px;
+	bottom: 42px;
+	font-size: 12px;
 	white-space: nowrap;
 /* 	left: 0; */
-	right: 15px;
+	right: 12px;
 	text-transform: uppercase;
 	font-weight: bold;
 	pointer-events: none;
@@ -2105,7 +2137,7 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 }
 
 .fixed-quick-link a:not(:last-child) {
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 
 .fixed-quick-link a:hover {
@@ -2117,10 +2149,24 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 }
 
 .fixed-quick-link img {
-	width: 32px;
+	width: 26px;
 	height: auto;
 	-webkit-box-shadow: none !important;
 	        box-shadow: none !important;
+}
+
+.fixed-quick-link-recruit {
+    position: fixed;
+    top: 40%;
+    top: 70vh;
+    right: 0;
+    display: inline-block;
+    z-index: 1001;
+}
+
+.fixed-quick-link-recruit img {
+    width: 50px;
+    height: auto;
 }
 
 /* Block editor - seperator */
@@ -2251,6 +2297,40 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
     color: #666;
 }
 
+.heading-group h3 {
+    line-height: 1;
+}
+
+.heading-group h3.has-text-align-center::before {
+    content: '';
+    display: none;
+}
+
+.heading-group h3.has-text-align-center {
+    display: block;
+    padding-top: 10px;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.heading-group h3 span {
+    font-size: 28px;
+    color: #666;
+}
+
+.heading-group h3.h3-28px{
+	font-size: 28px;
+	line-height: 42px;
+}
+
+.heading-group h3.h3-28px span.text-en{
+	font-size: 24px;
+	color:#666;
+	font-weight: 100;
+	line-height: 36px;
+}
+
 /**
  * Heading Group - Heading Brackets
  */
@@ -2263,6 +2343,7 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 .heading-bracket h2,
 .heading-bracket h3 {
 	max-width: calc( 100% - 148px );
+
 }
 
 .heading-bracket .wp-block-group__inner-container {
@@ -2304,9 +2385,104 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
     transform: scaleX(-1);
 }
 
+/*start - call for speakers 2021*/
+.heading-bracket .wp-block-group__inner-container_language {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+
+.heading-bracket .wp-block-group__inner-container_language::before,
+.heading-bracket .wp-block-group__inner-container_language::after {
+	content: '';
+    display: inline-block;
+	width: 16px !important;
+    height: 24px !important;
+    margin-right: 1rem !important;
+	margin-left: 1rem !important;
+	background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.heading-bracket .wp-block-group__inner-container_language::before {
+    background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/vector-40.png);
+    background-size: contain;
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+
+.heading-bracket .wp-block-group__inner-container_language::after {
+    background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/vector-40.png);
+    content: "";
+    display: inline-block;
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.heading-bracket h3.header {
+	max-width: calc( 100% );
+	white-space: nowrap;
+	margin-bottom: 0;
+	padding-top: 0;
+	font-weight: 700;
+}
+
+.heading-bracket .wp-block-group__inner-container_header {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.heading-bracket .wp-block-group__inner-container_header::before,
+.heading-bracket .wp-block-group__inner-container_header::after {
+	content: '';
+    display: inline-block;
+	width: 16px !important;
+	width: 20px!important;
+    height: 50px!important;
+	background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.heading-bracket .wp-block-group__inner-container_header::before {
+    background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/vector-40.png);
+    background-size: contain;
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+
+.heading-bracket .wp-block-group__inner-container_header::after {
+    background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/vector-40.png);
+    content: "";
+    display: inline-block;
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+
+/*end - call for speakers 2021*/
+
 @media screen and ( max-width: 48em ) {
 	.heading-bracket h2.has-text-align-center {
 		max-width: calc( 100% - 80px );
+	}
+	article#panel2 .wp-block-columns.has-2-columns.row-full-width.about_bg {
+		padding: 20px !important;
 	}
 }
 
@@ -2368,13 +2544,18 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 	.wp-block-columns.pink-square-group {
 		display: grid;
 		grid-gap: 15px;
-		grid-template-columns: repeat(2, 130px);
+		grid-template-columns: repeat(2, 150px);
 	}
 	.pink-square {
-		height: 122px;
+		height: 142px;
 	}
 	.entry-content .pink-square .wp-block-button__link {
 		padding: 0.5em;
+	}
+
+	.entry-content .pink-square .wp-block-button__link span.text-en {
+		font-size: 13px;
+		white-space: pre-wrap;
 	}
 }
 
@@ -2563,6 +2744,45 @@ li.wordcamp-post-list__post.wordcamp-clearfix:last-child {
 	font-size: 20px;
 }
 
+/* #panel1 */
+#panel1 .wp-block-columns {
+
+}
+#panel1 .wp-block-columns .wp-block-column:first-child div {
+	margin-left: auto;
+	margin-bottom: 1em;
+	text-align: center;
+	width: 303px;
+	height: 162px;
+	background: #FDD708;
+	border: 2px solid #060606;
+	border-radius: 8px;
+	padding-top: 20px;
+	line-height: 0.5
+}
+
+#panel1 .wp-block-columns .wp-block-column:last-child div {
+	text-align: center;
+	width: 303px;
+	height: 162px;
+	background: #23459a;
+	color:#fff;
+	border: 2px solid #060606;
+	border-radius: 8px;
+	padding-top: 20px;
+	line-height: 0.5;
+}
+
+@media screen and ( max-width: 768px ) {
+    #panel1 .wp-block-columns .wp-block-column:first-child div {
+		margin: 0 auto 1em;
+	}
+
+	#panel1 .wp-block-columns .wp-block-column:last-child div {
+        margin: auto;
+    }
+}
+
 /* Home_about section*/
 #panel2 .wrap {
 	padding: 30px 0;
@@ -2571,10 +2791,9 @@ li.wordcamp-post-list__post.wordcamp-clearfix:last-child {
 }
 
 article#panel2 .wp-block-columns.has-2-columns.row-full-width.about_bg {
-	background-color: #dffdff;
   background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/wctw-kv-bg.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: 10px;
+  background-repeat: repeat;
   padding: 0 20px;
 }
 
@@ -2589,22 +2808,15 @@ article#panel2 .wp-block-image figure.alignright {
 
 article#panel2	.wp-block-column.row-right {
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .wp-block-column.row-right .has-text-color {
   padding-top: 0px;
-  margin: 10px;
   font-size: 16px;
-
-  background-color: #dffdff;
-  border: 8px solid #dffdff;
-  outline: 2px solid #adeef3;
-  outline-offset: -2px;
 }
 
 .twentyseventeen-front-page .panel-content .recent-posts article {
-    border: 2px solid;
     color: #333;
     margin-bottom: 2em;
     background: #fccc03;
@@ -2619,6 +2831,8 @@ article#panel2	.wp-block-column.row-right {
 
 .twentyseventeen-front-page .panel-content .recent-posts article .entry-header {
     margin-bottom: 0;
+	border: 2px solid;
+	border-radius: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2648,6 +2862,18 @@ article#panel2	.wp-block-column.row-right {
 	        box-shadow: none;
 }
 
+@media screen and ( max-width: 768px ) {
+    .twentyseventeen-front-page .panel-content .recent-posts article .entry-header {
+		padding: 8px 16px;
+		text-align: left;
+	}
+	.twentyseventeen-front-page .panel-content .recent-posts article .entry-title {
+		-webkit-box-flex: 100%;
+		    -ms-flex: 100%;
+		        flex: 100%;
+	}
+}
+
 article#panel4 {
 	background-color: #1ea85811;
 }
@@ -2656,7 +2882,6 @@ article#panel4 {
 
 	article#panel2 .wp-block-columns.has-2-columns.row-full-width.about_bg {
     background: none;
-	  background-color: #dffdff;
     padding: 0;
     max-width: 860px;
     margin: 0 auto;
@@ -2785,7 +3010,11 @@ article#panel4 {
 
 @media screen and (max-width: 768px) {
 	.page .site-main {
-		padding: 0 20px;
+		padding: 0;
+	}
+
+	.page.twentyseventeen-front-page #panel1 .wp-block-group p {
+		width: calc( 100% - 80px);
 	}
 }
 /* homepage panel styling */
@@ -2856,7 +3085,11 @@ article#panel4 {
 
 /*網站各個按鈕樣式*/
 .entry-content .wp-block-button__link {
+<<<<<<< HEAD
 	background-color: #23459A;
+=======
+	background-color: #000;
+>>>>>>> f320a79dfec3c4e0843802414fcab6e96eceb415
 	border: 2px solid #060606;
 	border-radius: 10px;
 	color: #fff;
@@ -2930,7 +3163,9 @@ button:not([name="jetpack_subscriptions_widget"]):not(.menu-toggle):not(.dropdow
 	background: linear-gradient(145DEG,#7BC16D,#20AB41);
 	transition: all .2s ease-in-out;
 } */
-/* 
+#top-menu .dropdown-toggle {
+  color: #fff;
+}
 
 /* form input fields */
 input[type="text"],
@@ -2969,9 +3204,15 @@ select {
 .contact-form input[type=url] {
     width: 100%;
 }
+
+@media (prefers-color-scheme: dark) {
+  option {
+    color: #fff;
+  }
+}
 .wcorg-organizers {
 	margin-top: 1em !important;
-	border: 1px solid #bbcce9;
+	border: 2px solid #000;
 	padding: 15px;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -2987,6 +3228,15 @@ select {
 	        justify-content: flex-start;
 	-webkit-justify-content: flex-start;
 	margin-bottom: 1.5rem;
+	-webkit-box-shadow: 0 5px 0 #000;
+	        box-shadow: 0 5px 0 #000;
+}
+
+.wcorg-organizer-description .wp-block-buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+	margin-bottom: 1em;
 }
 
 @media screen and (min-width:48em) {
@@ -3006,11 +3256,12 @@ select {
 	        flex: 1 0 100%;
 }
 
-.wcorg-organizer h2 {
+.wcorg-organizer h2:not(.widget-title):not(.home_info_sub) {
 	top: 1em;
 	z-index: 0;
-	color: #6b9bd2;
 	font-size: 1.5rem;
+	display: block;
+    text-align: center;
 }
 
 div.wcorg-organizers div.wcorg-organizer h2:before {
@@ -3403,7 +3654,8 @@ table.wcpt-schedule td {
 	width: 50%;
 }
 
-.table-sponsor.sp td,.table-sponsor.sp th {
+.table-sponsor.sp td,
+.table-sponsor.sp th {
 	text-align: left;
 	padding: 3px 5px;
 	border-bottom: none;
@@ -3436,7 +3688,8 @@ table.wcpt-schedule td {
   .entry-content table tr {
   	border-bottom: 1px solid #6b9bd2;
   }
-  .entry-content table td,.entry-content table th {
+  .entry-content table td,
+  .entry-content table th {
   	text-align: center;
   	padding: 10px;
   	line-height: 140%;

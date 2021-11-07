@@ -1,6 +1,10 @@
 @media screen and (max-width: 768px) {
 	.page .site-main {
-		padding: 0 20px;
+		padding: 0;
+	}
+
+	.page.twentyseventeen-front-page #panel1 .wp-block-group p {
+		width: calc( 100% - 80px);
 	}
 }
 /* homepage panel styling */
@@ -71,7 +75,7 @@
 
 /*網站各個按鈕樣式*/
 .entry-content .wp-block-button__link {
-	background-color: #23459A;
+	background-color: #000;
 	border: 2px solid #060606;
 	border-radius: 10px;
 	color: #fff;

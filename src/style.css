@@ -127,11 +127,11 @@ h3 {
 }
 
 h4:not(.sponsor-level-title), h5, h6, p, ul, ol, li {
-	color: #717071;
+	color: #060606;
 }
 
 blockquote.wp-block-quote.is-style-info p {
-	color: #4b4848;
+	color: #060606;
 }
 .EN {
 	font-family: "Work Sans";
@@ -710,15 +710,23 @@ body:not(.twentyseventeen-front-page) .entry-content {
 /* 主辦單位志工區塊 */
 .wcorg-organizers {
 	background-color: #fdd000;
+	border: 2px solid #000;
 	border-radius: 16px;
+
 	box-shadow: 0 5px 0 #000;
 }
 /* 主辦單位志工（單個志工） */
 .wcorg-organizer {
 	text-align: center;
 }
+
 /* 志工頭像 */
-.avatar {
+
+.wcorg-organizer p {
+	text-align: left;
+}
+
+.wcorg-organizer img.avatar {
 	border-radius: 50%;
 }
 /* 按鈕 */
@@ -729,17 +737,27 @@ body:not(.twentyseventeen-front-page) .entry-content {
 	border-radius: 16px;
 	text-decoration: none;
 }
+<<<<<<< HEAD
 .entry-content .wp-block-button__link {
 	background-color: #000;
 }
+=======
+
+>>>>>>> f320a79dfec3c4e0843802414fcab6e96eceb415
 /* 關於 WordCamp 按鈕 */
-.home_about_but .wp-block-button__link {
+.wp-block-column.row-right .home_about_but .wp-block-button__link {
 	background-color: #fdd708;
 	box-shadow: 0 5px;
+	color: #000;
 }
 /* Organizer 樣式 */
 .wcorg-organizer-description .wp-block-buttons {
     justify-content: center;
+}
+
+.wcorg-organizer-description .wp-block-buttons .wp-block-button__link {
+    border-radius: 30px;
+    background: #000;
 }
 
 /* 購票頁面選購數量背景顏色修正 */

@@ -33,7 +33,9 @@ button:not([name="jetpack_subscriptions_widget"]):not(.menu-toggle):not(.dropdow
 	background: linear-gradient(145DEG,#7BC16D,#20AB41);
 	transition: all .2s ease-in-out;
 } */
-/* 
+#top-menu .dropdown-toggle {
+  color: #fff;
+}
 
 /* form input fields */
 input[type="text"],
@@ -71,4 +73,10 @@ select {
 .contact-form input[type=text],
 .contact-form input[type=url] {
     width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  option {
+    color: #fff;
+  }
 }
