@@ -158,7 +158,6 @@ blockquote.wp-block-quote.is-style-info p {
 	}
 
 	.EN h2 {
-		
 		font-size: 36px;
 	}
 
@@ -712,18 +711,6 @@ body:not(.twentyseventeen-front-page) .entry-content {
 	background-color: #23459a;
 	border: black 2px solid;
 	border-radius: 15px;
-}
-.fixed-quick-link-recruit{
-	position: fixed;
-    top: 40%;
-    top: 70vh;
-    right: 0;
-    display: inline-block;
-    z-index: 1001;
-}
-.fixed-quick-link-recruit img{
-	width: 50px;
-	height: auto;
 }
 
 @media screen and ( min-width: 48em ) {
