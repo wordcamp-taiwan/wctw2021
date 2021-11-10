@@ -33,31 +33,50 @@ button:not([name="jetpack_subscriptions_widget"]):not(.menu-toggle):not(.dropdow
 	background: linear-gradient(145DEG,#7BC16D,#20AB41);
 	transition: all .2s ease-in-out;
 } */
-/* 
+#top-menu .dropdown-toggle {
+  color: #fff;
+}
 
 /* form input fields */
 input[type="text"],
-input[type="email"]:not(#subscribe-field-blog_subscription-4),
+input[type="email"],
 input[type="url"],
 input[type="tel"],
 textarea {
-  border:  1px solid #060606 !important;
+  border:  1px solid #060606;
   border-radius: 10px;
-  background: rgba(253, 215, 8, 0.1) !important;
+  background: rgba(253, 215, 8, 0.1);
 }
 input[type="text"]:focus,
-input[type="email"]:not(#subscribe-field-blog_subscription-4):focus,
+input[type="email"]:focus,
 input[type="url"]:focus,
 input[type="tel"]:focus,
 textarea:focus {
-	border:  1px solid #060606 !important;
+	border:  1px solid #060606;
 }
 select {
-	border:  1px solid #060606 !important;
+	border:  1px solid #060606;
     border-radius: 10px;
-    background: rgba(253, 215, 8, 0.1) !important;
+    background: rgba(253, 215, 8, 0.1);
 }
 
-.contact-form input[type=email], .contact-form input[type=tel], .contact-form input[type=text], .contact-form input[type=url] {
-    width: 100% !important;
+.contact-form input[type=email],
+.contact-form input[type=tel],
+.contact-form input[type=text],
+.contact-form input[type=url],
+.contact-form textarea {
+  width: 50%;
+}
+
+.contact-form input[type=email],
+.contact-form input[type=tel],
+.contact-form input[type=text],
+.contact-form input[type=url] {
+    width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  option {
+    color: #fff;
+  }
 }

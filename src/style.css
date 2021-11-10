@@ -19,27 +19,17 @@ ol,ul {
 	margin-left: 2em;
 }
 
-a, .nav-title a, .entry-content a, .entry-meta a {
+a, .nav-title a, .entry-content a {
 	text-decoration: none;
 	color: #6b9bd2;
 	box-shadow: none;
 }
-.entry-content a, .widget.widget_categories a, .widget.widget_recent_entries a, .widget.widget_recent_comments a, .widget.widget_archive a {
-	background: linear-gradient(transparent 60%,#FFF4CC 0);
-}
-a:hover, .nav-title a:hover, .entry-meta a:hover {
-	color: #0068B6;
-	/* box-shadow: inset 0 0 0 rgba(0, 104, 182, 0), 0 3px 0 rgba(0, 104, 182, 1); */
-	box-shadow: none;
-}
-.entry-content a:hover, .widget.widget_categories a:hover, .widget.widget_recent_entries a:hover, .widget.widget_recent_comments a:hover, .widget.widget_archive a:hover {
-	color: #0068B6;
-	box-shadow: none;
-	border: 0;
-	background: linear-gradient(transparent 60%,#FFE792 0);
+
+.entry-meta a {
+	color: #000;
 }
 
-h1:not(.site-title):not(.home_info_title), h1.entry-title:not(:first-child), .page .panel-content .entry-title, .page-title, body.page:not(.twentyseventeen-front-page) .entry-title, .site-footer .widget-column.footer-widget-1 h2.widget-title {
+/* h1:not(.site-title):not(.home_info_title), h1.entry-title:not(:first-child), .page .panel-content .entry-title, .page-title, body.page:not(.twentyseventeen-front-page) .entry-title, .site-footer .widget-column.footer-widget-1 h2.widget-title {
 	background-color: none;
 	color: #000;
 	display: inline-block;
@@ -51,8 +41,9 @@ h1:not(.site-title):not(.home_info_title), h1.entry-title:not(:first-child), .pa
 	text-align: center;
 	text-transform: none;
 	letter-spacing: 1px !important;
-}
-h1.entry-title {
+} */
+.page-header,
+.page h1.entry-title {
 	display: none;
 }
 /* h1:not(.site-title):not(.home_info_title):after, .site-footer .widget-column.footer-widget-1 h2.widget-title:before {
@@ -68,9 +59,6 @@ h1.entry-title {
 	bottom: -20px;
 	transform: rotate(15deg);
 } */
-.page-header{
-	display:none;
-}
 
 h2:not(.widget-title):not(.home_info_sub),
 h4.sponsor-level-title {
@@ -80,11 +68,12 @@ h4.sponsor-level-title {
 	font-size: 28px;
 }
 
-h2:not(.widget-title):not(.home_info_sub):before,
-h4.sponsor-level-title:before {
+h2:not(.widget-title):not(.home_info_sub)::before,
+h3[class^="heading-"]::before,
+h4[class^="heading-"]::before {
 	content: '';
-	display: inline-block;
-	width: 28px;
+	display: flex;
+	min-width: 28px;
 	height: 37px;
 	background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/vector-38.png);
 	background-size: contain;
@@ -93,13 +82,28 @@ h4.sponsor-level-title:before {
 }
 
 h2.heading-green:not(.widget-title):not(.home_info_sub):before,
+h3.heading-green:before,
 h4.heading-green:before {
 	background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/heading-green.png);
 }
 
 h2.heading-yellow:not(.widget-title):not(.home_info_sub):before,
+h3.heading-yellow:before,
 h4.heading-yellow:before {
 	background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/heading-yellow.png);
+}
+
+h3.heading-star {
+	font-weight: 500;
+    font-size: 24px;
+	align-items: center;
+	display: flex;
+}
+
+h3.heading-star::before {
+	background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/h3.png);
+	min-width: 37px;
+	margin-right: 20px;
 }
 
 h2.entry-title a {
@@ -115,7 +119,7 @@ h2.entry-title a:hover {
 	display: none;
 }
 
-h3:not(.sd-title) {
+h3 {
 	color: #000;
 	font-size: 28px;
 	padding: 0 0 0 10px;
@@ -123,11 +127,11 @@ h3:not(.sd-title) {
 }
 
 h4:not(.sponsor-level-title), h5, h6, p, ul, ol, li {
-	color: #717071;
+	color: #060606;
 }
 
 blockquote.wp-block-quote.is-style-info p {
-	color: #4b4848;
+	color: #060606;
 }
 .EN {
 	font-family: "Work Sans";
@@ -201,6 +205,10 @@ blockquote.wp-block-quote.is-style-info p {
 .shadow,
 .entry-content a.shadow {
 	box-shadow: 0px 4px;
+}
+
+body:not(.twentyseventeen-front-page) .entry-content {
+	overflow: hidden;
 }
 
 .pencil::before {
@@ -710,4 +718,51 @@ blockquote.wp-block-quote.is-style-info p {
 		max-width: 1064px;
 	}
 	
+}
+
+/* 主辦單位志工區塊 */
+.wcorg-organizers {
+	background-color: #fdd000;
+	border: 2px solid #000;
+	border-radius: 16px;
+
+	box-shadow: 0 5px 0 #000;
+}
+/* 主辦單位志工（單個志工） */
+.wcorg-organizer {
+	text-align: center;
+}
+
+/* 志工頭像 */
+
+.wcorg-organizer p {
+	text-align: left;
+}
+
+.wcorg-organizer img.avatar {
+	border-radius: 50%;
+}
+/* 按鈕 */
+.wp-block-button .wp-block-button__link {
+	margin: auto;
+	padding: 10px;
+	color: #fff;
+	border-radius: 16px;
+	text-decoration: none;
+}
+
+/* 關於 WordCamp 按鈕 */
+.wp-block-column.row-right .home_about_but .wp-block-button__link {
+	background-color: #fdd708;
+	box-shadow: 0 5px;
+	color: #000;
+}
+/* Organizer 樣式 */
+.wcorg-organizer-description .wp-block-buttons {
+    justify-content: center;
+}
+
+.wcorg-organizer-description .wp-block-buttons .wp-block-button__link {
+    border-radius: 30px;
+    background: #000;
 }
