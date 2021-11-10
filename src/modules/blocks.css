@@ -177,6 +177,20 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 	        box-shadow: none !important;
 }
 
+.fixed-quick-link-recruit {
+    position: fixed;
+    top: 40%;
+    top: 70vh;
+    right: 0;
+    display: inline-block;
+    z-index: 1001;
+}
+
+.fixed-quick-link-recruit img {
+    width: 50px;
+    height: auto;
+}
+
 /* Block editor - seperator */
 .language-tag {
 	position: relative;
@@ -305,7 +319,6 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
     color: #666;
 }
 
-
 .heading-group h3 {
     line-height: 1;
 }
@@ -323,25 +336,22 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
     font-weight: 700;
 }
 
-
-
 .heading-group h3 span {
     font-size: 28px;
     color: #666;
 }
 
 .heading-group h3.h3-28px{
-	font-size:28px;
+	font-size: 28px;
 	line-height: 42px;
 }
 
-.heading-group h3.h3-28px  span.text-en{
-	font-size:24px;
+.heading-group h3.h3-28px span.text-en{
+	font-size: 24px;
 	color:#666;
-	font-weight:100;
+	font-weight: 100;
 	line-height: 36px;
 }
-
 
 /**
  * Heading Group - Heading Brackets
@@ -419,7 +429,7 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 }
 
 .heading-bracket .wp-block-group__inner-container_language::before {
-    background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-40.png");
+    background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/vector-40.png);
     background-size: contain;
     -webkit-transform: scaleY(-1);
     -ms-transform: scaleY(-1);
@@ -427,7 +437,7 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 }
 
 .heading-bracket .wp-block-group__inner-container_language::after {
-    background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-40.png");
+    background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/vector-40.png);
     content: "";
     display: inline-block;
     -webkit-transform: scaleX(-1);
@@ -435,15 +445,12 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
     transform: scaleX(-1);
 }
 
-
-
-
 .heading-bracket h3.header {
 	max-width: calc( 100% );
 	white-space: nowrap;
-	margin-bottom:0px;
-	font-weight:700;
-	padding-top: 0px;
+	margin-bottom: 0;
+	padding-top: 0;
+	font-weight: 700;
 }
 
 .heading-bracket .wp-block-group__inner-container_header {
@@ -451,7 +458,6 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
     align-items: center;
     flex-wrap: wrap;
 }
-
 
 .heading-bracket .wp-block-group__inner-container_header::before,
 .heading-bracket .wp-block-group__inner-container_header::after {
@@ -465,7 +471,7 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 }
 
 .heading-bracket .wp-block-group__inner-container_header::before {
-    background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-40.png");
+    background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/vector-40.png);
     background-size: contain;
     -webkit-transform: scaleY(-1);
     -ms-transform: scaleY(-1);
@@ -473,7 +479,7 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 }
 
 .heading-bracket .wp-block-group__inner-container_header::after {
-    background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-40.png");
+    background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/vector-40.png);
     content: "";
     display: inline-block;
     -webkit-transform: scaleX(-1);
