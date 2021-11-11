@@ -118,9 +118,9 @@ figure.schedule-table {
     box-shadow: inset -2px 2px black;
 }
 
-.schedule-table>table>thead>tr>th:not(:first-child) {
+/* .schedule-table>table>thead>tr>th:not(:first-child) {
     width: 22%;
-}
+} */
 
 .schedule-table>table>tbody>tr>td:first-child {
     background: #FDD708;
