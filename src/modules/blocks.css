@@ -737,6 +737,9 @@ li.wordcamp-post-list__post.wordcamp-clearfix a.wordcamp-image__featured-image-l
 	li.wordcamp-post-list__post.wordcamp-clearfix {
 		border-bottom: 2px solid #000;
 		margin-bottom: 5px;
+	}
+
+	.page-slug-sponsors li.wordcamp-post-list__post.wordcamp-clearfix {
 		padding: 75px 45px 56px;
 	}
 }
