@@ -1,5 +1,6 @@
 .table-sponsor a {
-    color: #0068b6;
+    color: #eee;
+    text-decoration: underline;
 }
 
 .table-sponsor h3 {
