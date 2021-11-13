@@ -1783,6 +1783,9 @@ header#masthead.site-header {
 	}
 }
 
+.tix-tickets-list .tix-ticket-title {
+  color: #fff;
+}
 .tix-js .tix-info {
   padding: 20px;
   border: 1px solid #20AB41;
@@ -3209,6 +3212,7 @@ select {
 
 @media (prefers-color-scheme: dark) {
   option {
+    background-color: #333;
     color: #fff;
   }
 }
@@ -3734,7 +3738,8 @@ figure.schedule-table {
 	display: none;
 }
 .table-sponsor a {
-    color: #0068b6;
+    color: #eee;
+    text-decoration: underline;
 }
 
 .table-sponsor h3 {
