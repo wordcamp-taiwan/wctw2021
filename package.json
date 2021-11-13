@@ -16,5 +16,8 @@
   },
   "browserslist": [
     "last 4 versions"
-  ]
+  ],
+  "dependencies": {
+    "all": "0.0.0"
+  }
 }

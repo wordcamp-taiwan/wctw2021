@@ -3650,35 +3650,50 @@ figure.schedule-table {
 }
 
 .schedule-table>table>thead>tr>th {
-    -webkit-box-shadow: inset 0px 2px black;
-    box-shadow: inset 0px 2px black;
+    -webkit-box-shadow: inset 2px 2px black;
+    box-shadow: inset 2px 2px black;
     padding: 1em;
 }
 
 .schedule-table>table>thead>tr>th:first-child {
-    border-top-left-radius: 8px;
+    border-top-left-radius: 16px;
     width: 10%;
-    -webkit-box-shadow: inset 0px 2px black;
-    box-shadow: inset 0px 2px black;
+    -webkit-box-shadow: inset 2px 2px black;
+    box-shadow: inset 2px 2px black;
 }
 
 .schedule-table>table>thead>tr>th:last-child {
-    border-top-right-radius: 10px;
-    -webkit-box-shadow: inset 0px 2px black;
-    box-shadow: inset 0px 2px black;
+    border-top-right-radius: 16px;
+    -webkit-box-shadow: inset -2px 2px black;
+    box-shadow: inset -2px 2px black;
+}
+
+.schedule-table>table>thead>tr>th.s3 {
+    -webkit-box-shadow: inset 0 2px black;
+    box-shadow: inset 0 2px black;
+}
+
+.schedule-table>table>thead>tr>th.s3:last-child {
+    -webkit-box-shadow: inset -2px 2px black;
+    box-shadow: inset -2px 2px black;
+}
+
+.schedule-table>table>thead>tr>th.s4:not(:first-child) {
+    -webkit-box-shadow: inset 0 2px black;
+    box-shadow: inset 0 2px black;
 }
 
 .schedule-table>table>tbody>tr:last-child>td:first-child {
-    border-bottom-left-radius: 8px;
+    border-bottom-left-radius: 16px;
 }
 
 .schedule-table>table>tbody>tr:last-child>td:last-child {
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 16px;
 }
 
 .schedule-table>table>tbody>tr:last-child>td {
-    -webkit-box-shadow: 0px 2px #000;
-    box-shadow: 0px 2px #000;
+    -webkit-box-shadow: 0px 5px #000;
+    box-shadow: 0px 5px #000;
 }
 
 .schedule-table>table>thead>tr>th.s3 {
@@ -3687,8 +3702,8 @@ figure.schedule-table {
 
 .schedule-table>table>tbody>tr>td:first-child {
     background: #FDD708;
-    -webkit-box-shadow: inset 2px 0px #000;
-    box-shadow: inset 2px 0px #000;
+    border-left: 3px solid #000;
+    border-right: 2px solid #000;
 }
 
 .schedule-table>table>tbody>tr>td:second-child {
@@ -3802,75 +3817,6 @@ figure.schedule-table {
 .table-sponsor .cell-l {
     width: 40%;
 }
-
-
-/*schedule-table v1  2021-10-10*/
-
-figure.schedule-table {
-    width: 100% !important;
-}
-
-.schedule-table>table {
-    border-collapse: separate;
-    border-spacing: 0;
-    /*border-collapse: collapse;*/
-}
-
-.schedule-table>table>thead>tr {}
-
-.wp-block-table th {
-    border: none !important;
-}
-
-.entry-content table th {
-    background: #23459A !important;
-    color: white !important;
-}
-
-.schedule-table>table>thead>tr>th {
-    -webkit-box-shadow: inset 0px 2px black;
-            box-shadow: inset 0px 2px black;
-    padding: 1em;
-}
-
-.schedule-table>table>thead>tr>th:first-child {
-    border-top-left-radius: 8px;
-    width: 12%;
-    -webkit-box-shadow: inset 2px 2px black;
-            box-shadow: inset 2px 2px black;
-}
-
-.schedule-table>table>thead>tr>th:last-child {
-    border-top-right-radius: 10px;
-    -webkit-box-shadow: inset -2px 2px black;
-            box-shadow: inset -2px 2px black;
-}
-
-/* .schedule-table>table>thead>tr>th:not(:first-child) {
-    width: 22%;
-} */
-
-.schedule-table>table>tbody>tr>td:first-child {
-    background: #FDD708;
-    -webkit-box-shadow: inset 2px 0px #000;
-            box-shadow: inset 2px 0px #000;
-}
-
-.schedule-table>table>tbody>tr>td:second-child {
-    -webkit-box-shadow: inset 2px 0px #000;
-            box-shadow: inset 2px 0px #000;
-}
-
-.entry-content table tr {
-    border: none;
-}
-
-.schedule-table>table>tbody>tr>td {
-    border: 1px solid black;
-}
-
-
-/*end- schedule-table v1  2021-10-10*/
 #timeline{
   text-align: center;
   width: 100%;
