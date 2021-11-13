@@ -49,9 +49,13 @@ h3.wordcamp-block__item-title.wordcamp-sessions__title a {
     color: #717071;
 }
 
+.page-slug-sessions li.wordcamp-post-list__post.wordcamp-clearfix  {
+
+}
+
 @media screen and (min-width: 768px) {
     .page-slug-sessions li.wordcamp-post-list__post.wordcamp-clearfix {
-        border-bottom: 1px solid #bbcce9;
+        border-bottom: 2px solid #000;
         margin-bottom: 50px;
         padding-bottom: 20px;
     }
