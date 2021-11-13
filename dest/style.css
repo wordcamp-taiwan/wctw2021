@@ -2694,7 +2694,7 @@ ul.wordcamp-block.wordcamp-post-list.has-layout-list.wordcamp-sponsors {
 	margin-left: 0;
 }
 
-li.wordcamp-post-list__post.wordcamp-clearfix a:not(.wordcamp-image__featured-image-link) {
+li.wordcamp-post-list__post.wordcamp-clearfix {
 	background: none;
 	color: #000;
 	text-decoration: underline;
@@ -2722,6 +2722,10 @@ li.wordcamp-post-list__post.wordcamp-clearfix a.wordcamp-image__featured-image-l
 
 .page-slug-sponsors.page .site-main {
 	padding: 0;
+}
+
+.page-slug-sponsors .wordcamp-post-list__post.wordcamp-clearfix a:not(.wordcamp-image__featured-image-link) {
+	text-decoration: underline;
 }
 
 .slug-yuan-jhen-info img.wordcamp-image__featured-image.wp-post-image {
