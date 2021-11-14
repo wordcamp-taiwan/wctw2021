@@ -42,6 +42,15 @@
     border-bottom: 1px solid #6b9bd2;
 }
 
+tr.tix-row-coupon {
+    display: none;
+}
+
+.entry-content table td,
+.entry-content table th {
+    padding: 10px;
+}
+
 @media screen and (min-width:768px) {
     .table-sponsor.sp {
         display: none;
@@ -58,7 +67,6 @@
     .entry-content table td,
     .entry-content table th {
         text-align: center;
-        padding: 10px;
         line-height: 140%;
     }
 }

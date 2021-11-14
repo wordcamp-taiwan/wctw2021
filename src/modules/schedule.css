@@ -105,9 +105,10 @@ h3.wordcamp-block__item-title.wordcamp-sessions__title a {
 .wordcamp-sessions__category {
     font-size: .8em;
     font-style: normal;
-    color: #999;
-    background: #fff;
-    border: 1px solid;
+    border: 2px solid #000;
+    border-bottom-width: 5px;
+    background: #1ea838;
+    color: #fff;
     padding: 5px;
     border-radius: 5px;
 }
