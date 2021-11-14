@@ -3502,9 +3502,10 @@ h3.wordcamp-block__item-title.wordcamp-sessions__title a {
 .wordcamp-sessions__category {
     font-size: .8em;
     font-style: normal;
-    color: #999;
-    background: #fff;
-    border: 1px solid;
+    border: 2px solid #000;
+    border-bottom-width: 5px;
+    background: #1ea838;
+    color: #fff;
     padding: 5px;
     border-radius: 5px;
 }
@@ -3818,6 +3819,15 @@ figure.schedule-table {
     border-bottom: 1px solid #6b9bd2;
 }
 
+tr.tix-row-coupon {
+    display: none;
+}
+
+.entry-content table td,
+.entry-content table th {
+    padding: 10px;
+}
+
 @media screen and (min-width:768px) {
     .table-sponsor.sp {
         display: none;
@@ -3834,7 +3844,6 @@ figure.schedule-table {
     .entry-content table td,
     .entry-content table th {
         text-align: center;
-        padding: 10px;
         line-height: 140%;
     }
 }
