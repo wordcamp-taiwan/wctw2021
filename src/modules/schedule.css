@@ -87,18 +87,17 @@ h3.wordcamp-block__item-title.wordcamp-sessions__title a {
 
 .session-categories-links a {
     font-size: .8em;
-    color: #999;
-    background: #fff;
-    border: 1px solid;
+    color: #fff;
+    border: 2px solid #000;
+    border-bottom-width: 5px;
+    background: #1ea838;
     padding: 5px;
     border-radius: 5px;
 }
 
 .session-categories-links a:hover {
     font-size: .8em;
-    color: #0068b6;
-    background: #fff;
-    border: 1px solid;
+    color: #000;
     padding: 5px;
     border-radius: 5px;
 }
