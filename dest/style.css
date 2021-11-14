@@ -2697,7 +2697,7 @@ ul.wordcamp-block.wordcamp-post-list.has-layout-list.wordcamp-sponsors {
 li.wordcamp-post-list__post.wordcamp-clearfix {
 	background: none;
 	color: #000;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 li.wordcamp-post-list__post.wordcamp-clearfix {
