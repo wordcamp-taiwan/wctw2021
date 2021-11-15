@@ -470,3 +470,28 @@ body:not(.twentyseventeen-front-page):not(.page-slug-sponsors) .site-footer .wcb
 		width: 180px;
 	}
 }
+
+/* 前往取票 */
+.fixedRightBottom {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+}
+
+.fixedRightBottom a img {
+	box-shadow: none;
+}
+.fixedRightBottom img {
+	width: 70px;
+	height: 200px;
+}
+
+@media screen and ( max-width: 700px ) {
+	.fixedRightBottom {
+		bottom: 100px;
+	}
+	.fixedRightBottom img {
+		width: 35px;
+		height:100px;
+	}
+}
