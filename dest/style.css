@@ -3183,7 +3183,11 @@ article#panel4 {
 
 /*網站各個按鈕樣式*/
 .entry-content .wp-block-button__link {
+<<<<<<< HEAD
+	background-color: #23459A;
+=======
 	background-color: #000;
+>>>>>>> f320a79dfec3c4e0843802414fcab6e96eceb415
 	border: 2px solid #060606;
 	border-radius: 10px;
 	color: #fff;
