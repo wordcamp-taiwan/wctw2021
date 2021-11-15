@@ -1,3 +1,6 @@
+.tix-tickets-list .tix-ticket-title {
+  color: #fff;
+}
 .tix-js .tix-info {
   padding: 20px;
   border: 1px solid #20AB41;
@@ -31,7 +34,7 @@
   margin-top: 20px;
 }
 .tix_tickets_table .tix-row-coupon a, .tix-payment-method .tix-payment-tab.tix-tab-selected, #tix .tix-submit .tix-checkout-button {
-  background-color: #1FAC43;
+  background-color: #222;
 	color: #fff;
 	border-radius: 5px;
 	font-weight: 800;
@@ -40,7 +43,6 @@
 	margin-top: 20px;
 	padding: .75em 2em;
 	text-decoration: none;
-	color: #ffffff;
 	border-radius: 10px 10px 0 10px;
 	box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
 	background: linear-gradient(145DEG,#7BC16D,#20AB41);
@@ -68,3 +70,33 @@
 .tix_tickets_table.tix-attendee-form .tix-right select {
   width: 100%;
 }
+
+/* Hotfix for i18n issues with CSS */
+
+tr.tix-row-accommodations td.tix-required::before {
+    content: '你是否有任何無障礙需求？(如: 手語)';
+    display: block;
+}
+
+tr.tix-row-privacy td.tix-left::after {
+    content: 'Do you allow us to add you on our list of Attendees?';
+    display: block;
+}
+
+tr.tix-row-coc td.tix-left::after {
+    content: 'Do you agree with our Code of Conduct of this event?';
+    display: block;
+}
+
+
+.tix-row-privacy .tix-right label:first-child::after,
+tr.tix-row-accommodations .tix-right label:first-child::after,
+tr.tix-row-coc .tix-right label:first-child::after {
+    content: ' / Yes';
+}
+
+tr.tix-row-accommodations .tix-right label:last-child::after,
+.tix-row-privacy .tix-right label:last-child::after {
+    content: ' / No';
+}
+

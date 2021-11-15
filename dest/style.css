@@ -62,7 +62,8 @@ a, .nav-title a, .entry-content a {
 } */
 
 h2:not(.widget-title):not(.home_info_sub),
-h4.sponsor-level-title {
+h4.sponsor-level-title,
+h3.wordcamp-sessions__title {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -75,6 +76,7 @@ h4.sponsor-level-title {
 
 h2:not(.widget-title):not(.home_info_sub)::before,
 h3[class^="heading-"]::before,
+h3.wordcamp-sessions__title::before,
 h4[class^="heading-"]::before {
 	content: '';
 	display: -webkit-box;
@@ -113,6 +115,12 @@ h3.heading-star {
 
 h3.heading-star::before {
 	background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/h3.png);
+	min-width: 37px;
+	margin-right: 20px;
+}
+
+h3.wordcamp-sessions__title::before {
+	background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/vector-39.png);
 	min-width: 37px;
 	margin-right: 20px;
 }
@@ -1783,6 +1791,9 @@ header#masthead.site-header {
 	}
 }
 
+.tix-tickets-list .tix-ticket-title {
+  color: #fff;
+}
 .tix-js .tix-info {
   padding: 20px;
   border: 1px solid #20AB41;
@@ -1816,7 +1827,7 @@ header#masthead.site-header {
   margin-top: 20px;
 }
 .tix_tickets_table .tix-row-coupon a, .tix-payment-method .tix-payment-tab.tix-tab-selected, #tix .tix-submit .tix-checkout-button {
-  background-color: #1FAC43;
+  background-color: #222;
 	color: #fff;
 	border-radius: 5px;
 	font-weight: 800;
@@ -1825,7 +1836,6 @@ header#masthead.site-header {
 	margin-top: 20px;
 	padding: .75em 2em;
 	text-decoration: none;
-	color: #ffffff;
 	border-radius: 10px 10px 0 10px;
 	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
 	        box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
@@ -1863,6 +1873,36 @@ header#masthead.site-header {
 .tix_tickets_table.tix-attendee-form .tix-right select {
   width: 100%;
 }
+
+/* Hotfix for i18n issues with CSS */
+
+tr.tix-row-accommodations td.tix-required::before {
+    content: '你是否有任何無障礙需求？(如: 手語)';
+    display: block;
+}
+
+tr.tix-row-privacy td.tix-left::after {
+    content: 'Do you allow us to add you on our list of Attendees?';
+    display: block;
+}
+
+tr.tix-row-coc td.tix-left::after {
+    content: 'Do you agree with our Code of Conduct of this event?';
+    display: block;
+}
+
+
+.tix-row-privacy .tix-right label:first-child::after,
+tr.tix-row-accommodations .tix-right label:first-child::after,
+tr.tix-row-coc .tix-right label:first-child::after {
+    content: ' / Yes';
+}
+
+tr.tix-row-accommodations .tix-right label:last-child::after,
+.tix-row-privacy .tix-right label:last-child::after {
+    content: ' / No';
+}
+
 
 /*attendees*/
 #tix-attendees {
@@ -2343,7 +2383,11 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 .heading-bracket h2,
 .heading-bracket h3 {
 	max-width: calc( 100% - 148px );
+	margin-bottom:0px;
+}
 
+.heading-bracket h4{
+	margin-bottom:0px;
 }
 
 .heading-bracket .wp-block-group__inner-container {
@@ -2368,6 +2412,7 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
     background-size: contain;
 }
 
+
 .heading-bracket .wp-block-group__inner-container::before {
     background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-40.png");
     background-size: contain;
@@ -2384,6 +2429,7 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
     -ms-transform: scaleX(-1);
     transform: scaleX(-1);
 }
+
 
 /*start - call for speakers 2021*/
 .heading-bracket .wp-block-group__inner-container_language {
@@ -2669,24 +2715,46 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 }
 
 ul.wordcamp-block.wordcamp-post-list.has-layout-list.wordcamp-sponsors {
-	border: 1px solid #bbcce9;
+	background-color: #1ea858;
+	border: 2px solid #000;
+	border-bottom-width: 5px;
+	border-radius: 20px;
 	margin-bottom: 0;
-	padding: 20px 20px 10px;
 	margin-left: 0;
 }
 
 li.wordcamp-post-list__post.wordcamp-clearfix {
-	border-bottom: 1px solid #bbcce9;
+	background: none;
+	color: #000;
+	text-decoration: none;
+}
+
+li.wordcamp-post-list__post.wordcamp-clearfix {
+	border-bottom: 2px solid #000;
 	margin-bottom: 10px;
 }
 
 li.wordcamp-post-list__post.wordcamp-clearfix:last-child {
-	border-bottom: 0 solid #bbcce9;
+	border-bottom: 0;
 	margin-bottom: 0;
+}
+
+li.wordcamp-post-list__post.wordcamp-clearfix p,
+li.wordcamp-post-list__post.wordcamp-clearfix li {
+	color: #000;
+}
+
+li.wordcamp-post-list__post.wordcamp-clearfix a.wordcamp-image__featured-image-link img {
+	-webkit-box-shadow: none;
+	        box-shadow: none;
 }
 
 .page-slug-sponsors.page .site-main {
 	padding: 0;
+}
+
+.page-slug-sponsors .wordcamp-post-list__post.wordcamp-clearfix a:not(.wordcamp-image__featured-image-link) {
+	text-decoration: underline;
 }
 
 .slug-yuan-jhen-info img.wordcamp-image__featured-image.wp-post-image {
@@ -2700,7 +2768,7 @@ li.wordcamp-post-list__post.wordcamp-clearfix:last-child {
 
 	.wordcamp-image__featured-image-container.wordcamp-sponsors__featured-image.wordcamp-sponsors__logo.align-none {
 		text-align: center;
-		padding: 20px 0 30px;
+		padding: 0 0 32px;
 	}
 
 	.wordcamp-image__featured-image-container.wordcamp-sponsors__featured-image.wordcamp-sponsors__logo.align-none a {
@@ -2708,14 +2776,17 @@ li.wordcamp-post-list__post.wordcamp-clearfix:last-child {
 	}
 
 	ul.wordcamp-block.wordcamp-post-list.has-layout-list.wordcamp-sponsors {
-		border: 1px solid #bbcce9;
 		margin-bottom: 20px;
 		padding: 20px 35px;
 	}
 
 	li.wordcamp-post-list__post.wordcamp-clearfix {
-		border-bottom: 1px solid #bbcce9;
-		margin-bottom: 20px;
+		border-bottom: 2px solid #000;
+		margin-bottom: 5px;
+	}
+
+	.page-slug-sponsors li.wordcamp-post-list__post.wordcamp-clearfix {
+		padding: 75px 45px 56px;
 	}
 }
 
@@ -3207,6 +3278,7 @@ select {
 
 @media (prefers-color-scheme: dark) {
   option {
+    background-color: #333;
     color: #fff;
   }
 }
@@ -3357,265 +3429,371 @@ div.wcorg-organizers div.wcorg-organizer h2:before {
 }
 
 /*speaker*/
+
 div.wcorg-speaker {
-	margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .wcorg-speaker-description img {
-	float: none;
-	margin: 0 0 10px;
-	top: 3.8em;
-	left: 20px;
-	z-index: 0;
-	border-radius: 10px 10px 0 10px;
-	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
-	box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+    float: none;
+    margin: 0 0 10px;
+    top: 3.8em;
+    left: 20px;
+    z-index: 0;
+    border-radius: 10px 10px 0 10px;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
 }
 
 .wcorg-speaker-description ul {
-	margin-left: 0;
+    margin-left: 0;
 }
 
 @media screen and (min-width: 768px) {
-	.wcorg-speaker-description img {
-		float: left;
-		margin: 0 20px 50px 50px;
-	}
-	
-	.wcorg-speaker-description ul {
-		margin-left: 200px;
-	}
+    .wcorg-speaker-description img {
+        float: left;
+        margin: 0 20px 50px 50px;
+    }
+    .wcorg-speaker-description ul {
+        margin-left: 200px;
+    }
 }
+
 
 /*session*/
+
 h3.wordcamp-block__item-title.wordcamp-sessions__title a {
-	background: none;
+    background: none;
+    color: #000;
 }
 
-.editor-styles-wrapper .wordcamp-sessions__speakers, .editor-styles-wrapper .wordcamp-sessions__details, .entry-content .wordcamp-sessions__speakers, .entry-content .wordcamp-sessions__details {
-	font-style: normal;
+.editor-styles-wrapper .wordcamp-sessions__speakers,
+.editor-styles-wrapper .wordcamp-sessions__details,
+.entry-content .wordcamp-sessions__speakers,
+.entry-content .wordcamp-sessions__details {
+    font-style: normal;
 }
 
 .entry-content .wordcamp-sessions__speakers {
-	text-align: left;
-	margin-top: 1.5em;
-	color: #717071;
+    text-align: left;
+    margin-top: 1.5em;
+    color: #717071;
+}
+
+.page-slug-sessions li.wordcamp-post-list__post.wordcamp-clearfix  {
+
 }
 
 @media screen and (min-width: 768px) {
-	.page-slug-sessions li.wordcamp-post-list__post.wordcamp-clearfix {
-		border-bottom: 1px solid #bbcce9;
-		margin-bottom: 50px;
-		padding-bottom: 20px;
-	}
+    .page-slug-sessions li.wordcamp-post-list__post.wordcamp-clearfix {
+        border-bottom: 2px solid #000;
+        margin-bottom: 50px;
+        padding-bottom: 20px;
+    }
 }
 
-.single-wcb_session h2.session-speakers, .single-wcb_speaker h2.speaker-sessions {
-	font-size: 24px;
+.single-wcb_session h2.session-speakers,
+.single-wcb_speaker h2.speaker-sessions {
+    font-size: 24px;
 }
 
 #session-speaker-names {
-	margin-left: 0;
-	border-bottom: 1px solid #bbcce9;
-	padding: 0 0 1em;
+    margin-left: 0;
+    border-bottom: 1px solid #bbcce9;
+    padding: 0 0 1em;
 }
 
-#session-speaker-names li, #speaker-session-names li {
-	list-style-type: none;
-	font-size: 20px;
-	padding-left: 2.2em;
+#session-speaker-names li,
+#speaker-session-names li {
+    list-style-type: none;
+    font-size: 20px;
+    padding-left: 2.2em;
 }
 
-.session-categories-links, .entry-content .wordcamp-sessions__categories {
-	color: #fff;
+.session-categories-links,
+.entry-content .wordcamp-sessions__categories {
+    color: #fff;
 }
 
 .session-categories-links a {
-	font-size: .8em;
-	color: #999;
-	background: #fff;
-	border: 1px solid;
-	padding: 5px;
-	border-radius: 5px;
+    font-size: .8em;
+    color: #fff;
+    border: 2px solid #000;
+    border-bottom-width: 5px;
+    background: #1ea838;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .session-categories-links a:hover {
-	font-size: .8em;
-	color: #0068b6;
-	background: #fff;
-	border: 1px solid;
-	padding: 5px;
-	border-radius: 5px;
+    font-size: .8em;
+    color: #000;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 .wordcamp-sessions__category {
-	font-size: .8em;
-	font-style: normal;
-	color: #999;
-	background: #fff;
-	border: 1px solid;
-	padding: 5px;
-	border-radius: 5px;
+    font-size: .8em;
+    font-style: normal;
+    border: 2px solid #000;
+    border-bottom-width: 5px;
+    background: #1ea838;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
 }
 
+
 /* schedule*/
+
 .wcpt-schedule tr {
-	border: 1px solid #bbcce9;
+    border: 1px solid #bbcce9;
 }
 
 table.wcpt-schedule th {
-	background: #d3ebf5;
-	padding: 1.3rem;
+    background: #d3ebf5;
+    padding: 1.3rem;
 }
 
 table.wcpt-schedule td {
-	border-right: 1px solid #bbcce9;
-	border-bottom: 1px solid #bbcce9;
-	padding: 1.3rem;
-	position: relative;
-	text-align: left;
+    border-right: 1px solid #bbcce9;
+    border-bottom: 1px solid #bbcce9;
+    padding: 1.3rem;
+    position: relative;
+    text-align: left;
 }
 
 .wcpt-schedule .wcpt-col-track {
-	width: 30%;
+    width: 30%;
 }
 
 @media screen and (max-width: 700px) {
-	.wcpt-session-type-session {
-		padding: 0;
-		margin-bottom: 0;
-	}
-	
-	.wcpt-schedule tr {
-		border: 0;
-		border-bottom: 1px solid #bbcce9;
-	}
-	
-	table.wcpt-schedule  td, table.wcpt-schedule th {
-		padding: 0;
-		border-top: 1px solid #bbcce9;
-		border-left: 1px solid #bbcce9;
-		border-bottom: 0;
-	}
+    .wcpt-session-type-session {
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .wcpt-schedule tr {
+        border: 0;
+        border-bottom: 1px solid #bbcce9;
+    }
+    table.wcpt-schedule td,
+    table.wcpt-schedule th {
+        padding: 0;
+        border-top: 1px solid #bbcce9;
+        border-left: 1px solid #bbcce9;
+        border-bottom: 0;
+    }
 }
 
 .entry-content table.wcpt-schedule tr.global-session .wcb-session-cell-content,
 .entry-content table.wcpt-schedule .wcpt-time {
-	text-align: center;
-	padding: 1rem;
+    text-align: center;
+    padding: 1rem;
 }
 
-.entry-content .wcpt-schedule a:hover, .entry-content .wcpt-schedule a {
-	background: none;
-	margin-right: 10px;
+.entry-content .wcpt-schedule a:hover,
+.entry-content .wcpt-schedule a {
+    background: none;
+    margin-right: 10px;
 }
 
 .wcpt-session-speakers {
-	display: block;
-	margin-top: 1em;
+    display: block;
+    margin-top: 1em;
 }
 
 .wcpt-session-speakers a {
-	font-size: .9em;
-	color: #666;
+    font-size: .9em;
+    color: #666;
 }
 
 .wcpt-session-speakers:before {
-	display: inline-block;
-	content: "";
-	width: 20px;
-	height: 19px;
-	background: url('https://2019.taipei.wordcamp.org/files/2019/08/wctpe-2019-icons-title.png') 50% no-repeat;
-	background-size: contain;
-	margin-right: 5px;
-	position: relative;
-	top: 4px;
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 19px;
+    background: url('https://2019.taipei.wordcamp.org/files/2019/08/wctpe-2019-icons-title.png') 50% no-repeat;
+    background-size: contain;
+    margin-right: 5px;
+    position: relative;
+    top: 4px;
 }
 
-.wcpt-schedule .wcb-session-category-english:before, 
+.wcpt-schedule .wcb-session-category-english:before,
 .wcpt-schedule .wcb-session-category-mandarin-chinese:before {
-	position: absolute;
-	bottom: .8em;
-	right: .8em;
-	border-radius: 3px;
-	color: #fff;
-	display: inline-block;
-	font-size: 11px;
-	text-align: center;
-	line-height: 1;
-	padding: 5px;
+    position: absolute;
+    bottom: .8em;
+    right: .8em;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    font-size: 11px;
+    text-align: center;
+    line-height: 1;
+    padding: 5px;
 }
 
 .page-slug-schedule .wcpt-schedule .wcb-session-category-mandarin-chinese:before {
-	background-color: #FFE792BA;
-	content: "中";
+    background-color: #FFE792BA;
+    content: "中";
 }
 
 .page-slug-schedule .wcpt-schedule .wcb-session-category-english:before {
-	background-color: #7BC16DA1;
-	content: "EN";
+    background-color: #7BC16DA1;
+    content: "EN";
 }
 
 .wcpt-schedule div.wcb-session-favourite-icon {
-	top: 5px;
-	right: 0;
-	width: 25px;
+    top: 5px;
+    right: 0;
+    width: 25px;
 }
 
 @media screen and (max-width: 700px) {
-	td.wcpt-time {
-		background: #d3ebf5;
-	}
-	
-	span.wcpt-session-speakers {
-		display: block;
-		padding-left: 10px;
-		margin-top: 0;
-	}
-	
-	span.wcpt-session-speakers a {
-		color: #0068b6;
-	}
-	
-	span.wcpt-session-speakers:before {
-		content: "";
-	}
-	
-	.wcpt-schedule .wcb-session-category-english, .wcpt-schedule .wcb-session-category-mandarin-chinese {
-		padding: 0 0 3rem;
-	}
-	
-	.wcpt-schedule .wcb-track-socrates:not(.wcpt-session-type-custom):after {
-		content: "蘇格拉底廳 / Socrates";
-	}
-	
-	.wcpt-schedule .wcb-track-plato:not(.wcpt-session-type-custom):after {
-		content: "柏拉圖廳 / Plato";
-	}
-	
-	.wcpt-schedule .wcb-track-locke:not(.wcpt-session-type-custom):after {
-		content: "洛克廳 / Locke";
-	}
-	
-	.wcpt-schedule .wcpt-session-type-session:after {
-		position: absolute;
-		bottom: 1em;
-		left: 1em;
-		color: #666;
-		display: inline-block;
-		font-size: 13px;
-		text-align: center;
-		line-height: 1;
-		padding: 8px 0;
-	}
-	
-	.wcpt-schedule .wcb-session-category-english:before, 
-					.wcpt-schedule .wcb-session-category-mandarin-chinese:before {
-		position: absolute;
-		bottom: .5em;
-		right: .5em;
-	}
+    td.wcpt-time {
+        background: #d3ebf5;
+    }
+    span.wcpt-session-speakers {
+        display: block;
+        padding-left: 10px;
+        margin-top: 0;
+    }
+    span.wcpt-session-speakers a {
+        color: #0068b6;
+    }
+    span.wcpt-session-speakers:before {
+        content: "";
+    }
+    .wcpt-schedule .wcb-session-category-english,
+    .wcpt-schedule .wcb-session-category-mandarin-chinese {
+        padding: 0 0 3rem;
+    }
+    .wcpt-schedule .wcb-track-socrates:not(.wcpt-session-type-custom):after {
+        content: "蘇格拉底廳 / Socrates";
+    }
+    .wcpt-schedule .wcb-track-plato:not(.wcpt-session-type-custom):after {
+        content: "柏拉圖廳 / Plato";
+    }
+    .wcpt-schedule .wcb-track-locke:not(.wcpt-session-type-custom):after {
+        content: "洛克廳 / Locke";
+    }
+    .wcpt-schedule .wcpt-session-type-session:after {
+        position: absolute;
+        bottom: 1em;
+        left: 1em;
+        color: #666;
+        display: inline-block;
+        font-size: 13px;
+        text-align: center;
+        line-height: 1;
+        padding: 8px 0;
+    }
+    .wcpt-schedule .wcb-session-category-english:before,
+    .wcpt-schedule .wcb-session-category-mandarin-chinese:before {
+        position: absolute;
+        bottom: .5em;
+        right: .5em;
+    }
 }
+
+
+/*schedule-table v1  2021-10-10*/
+
+figure.schedule-table {
+    width: 100% !important;
+}
+
+.schedule-table>table {
+    border-collapse: separate;
+    border-spacing: 0;
+    /*border-collapse: collapse;*/
+}
+
+.schedule-table>table>thead>tr {}
+
+.wp-block-table th {
+    border: none !important;
+}
+
+.entry-content table th {
+    background: #23459A !important;
+    color: white !important;
+}
+
+.schedule-table>table>thead>tr>th {
+    -webkit-box-shadow: inset 2px 2px black;
+    box-shadow: inset 2px 2px black;
+    padding: 1em;
+}
+
+.schedule-table>table>thead>tr>th:first-child {
+    border-top-left-radius: 16px;
+    width: 10%;
+    -webkit-box-shadow: inset 2px 2px black;
+    box-shadow: inset 2px 2px black;
+}
+
+.schedule-table>table>thead>tr>th:last-child {
+    border-top-right-radius: 16px;
+    -webkit-box-shadow: inset -2px 2px black;
+    box-shadow: inset -2px 2px black;
+}
+
+.schedule-table>table>thead>tr>th.s3 {
+    -webkit-box-shadow: inset 0 2px black;
+    box-shadow: inset 0 2px black;
+}
+
+.schedule-table>table>thead>tr>th.s3:last-child {
+    -webkit-box-shadow: inset -2px 2px black;
+    box-shadow: inset -2px 2px black;
+}
+
+.schedule-table>table>thead>tr>th.s4:not(:first-child) {
+    -webkit-box-shadow: inset 0 2px black;
+    box-shadow: inset 0 2px black;
+}
+
+.schedule-table>table>tbody>tr:last-child>td:first-child {
+    border-bottom-left-radius: 16px;
+}
+
+.schedule-table>table>tbody>tr:last-child>td:last-child {
+    border-bottom-right-radius: 16px;
+}
+
+.schedule-table>table>tbody>tr:last-child>td {
+    -webkit-box-shadow: 0px 5px #000;
+    box-shadow: 0px 5px #000;
+}
+
+.schedule-table>table>thead>tr>th.s3 {
+    width: 20%;
+}
+
+.schedule-table>table>tbody>tr>td:first-child {
+    background: #FDD708;
+    border-left: 3px solid #000;
+    border-right: 2px solid #000;
+}
+
+.schedule-table>table>tbody>tr>td:second-child {
+    -webkit-box-shadow: inset 2px 0px #000;
+    box-shadow: inset 2px 0px #000;
+}
+
+.entry-content table tr {
+    border: none;
+}
+
+.schedule-table>table>tbody>tr>td {
+    border: 1px solid black;
+}
+
+
+/*end- schedule-table v1  2021-10-10*/
 /* page-slug-sponsors*/
 .sponsors_hide_continue_reading {
 	display: none;
@@ -3633,85 +3811,93 @@ table.wcpt-schedule td {
 	display: none;
 }
 .table-sponsor a {
-	color: #0068b6;
+    color: #eee;
+    text-decoration: underline;
 }
+
 .table-sponsor h3 {
-	margin: 1.5em 0 1em;
-	color: #6b9bd2;
-	padding: 0;
+    margin: 1.5em 0 1em;
+    color: #6b9bd2;
+    padding: 0;
 }
 
 .table-sponsor.pc {
-	display: none;
+    display: none;
 }
 
 .table-sponsor.sp th {
-	vertical-align: top;
-	background: none;
+    vertical-align: top;
+    background: none;
 }
 
 .table-sponsor.sp td {
-	width: 50%;
+    width: 50%;
 }
 
 .table-sponsor.sp td,
 .table-sponsor.sp th {
-	text-align: left;
-	padding: 3px 5px;
-	border-bottom: none;
+    text-align: left;
+    padding: 3px 5px;
+    border-bottom: none;
 }
 
 .table-sponsor.sp tr {
-	border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 }
 
 .table-sponsor.sp tr:first-of-type {
-	background: #d3ebf5;
-	border-bottom: 1px solid #6b9bd2;
+    background: #d3ebf5;
+    border-bottom: 1px solid #6b9bd2;
 }
 
 .table-sponsor.sp tr:last-of-type {
-	border-bottom: 1px solid #6b9bd2;
+    border-bottom: 1px solid #6b9bd2;
+}
+
+tr.tix-row-coupon {
+    display: none;
+}
+
+.entry-content table td,
+.entry-content table th {
+    padding: 10px;
 }
 
 @media screen and (min-width:768px) {
-	.table-sponsor.sp {
-		display: none;
-	}
-
-	.table-sponsor.pc {
-		display: block;
-	}
-  .entry-content table th {
-  	background: #d3ebf5;
-  }
-  .entry-content table tr {
-  	border-bottom: 1px solid #6b9bd2;
-  }
-  .entry-content table td,
-  .entry-content table th {
-  	text-align: center;
-  	padding: 10px;
-  	line-height: 140%;
-  }
+    .table-sponsor.sp {
+        display: none;
+    }
+    .table-sponsor.pc {
+        display: block;
+    }
+    .entry-content table th {
+        background: #d3ebf5;
+    }
+    .entry-content table tr {
+        border-bottom: 1px solid #6b9bd2;
+    }
+    .entry-content table td,
+    .entry-content table th {
+        text-align: center;
+        line-height: 140%;
+    }
 }
 
 .table-sponsor .font-s {
-	font-size: 90%;
+    font-size: 90%;
 }
 
 .table-sponsor .cell-s {
-	width: 5%;
+    width: 5%;
 }
 
 .table-sponsor .cell-m {
-	width: 24.5%;
+    width: 24.5%;
 }
 
 .table-sponsor .cell-l {
-	width: 40%;
+    width: 40%;
 }
-
 #timeline{
   text-align: center;
   width: 100%;

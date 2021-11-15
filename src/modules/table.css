@@ -1,79 +1,88 @@
 .table-sponsor a {
-	color: #0068b6;
+    color: #eee;
+    text-decoration: underline;
 }
+
 .table-sponsor h3 {
-	margin: 1.5em 0 1em;
-	color: #6b9bd2;
-	padding: 0;
+    margin: 1.5em 0 1em;
+    color: #6b9bd2;
+    padding: 0;
 }
 
 .table-sponsor.pc {
-	display: none;
+    display: none;
 }
 
 .table-sponsor.sp th {
-	vertical-align: top;
-	background: none;
+    vertical-align: top;
+    background: none;
 }
 
 .table-sponsor.sp td {
-	width: 50%;
+    width: 50%;
 }
 
 .table-sponsor.sp td,
 .table-sponsor.sp th {
-	text-align: left;
-	padding: 3px 5px;
-	border-bottom: none;
+    text-align: left;
+    padding: 3px 5px;
+    border-bottom: none;
 }
 
 .table-sponsor.sp tr {
-	border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 }
 
 .table-sponsor.sp tr:first-of-type {
-	background: #d3ebf5;
-	border-bottom: 1px solid #6b9bd2;
+    background: #d3ebf5;
+    border-bottom: 1px solid #6b9bd2;
 }
 
 .table-sponsor.sp tr:last-of-type {
-	border-bottom: 1px solid #6b9bd2;
+    border-bottom: 1px solid #6b9bd2;
+}
+
+tr.tix-row-coupon {
+    display: none;
+}
+
+.entry-content table td,
+.entry-content table th {
+    padding: 10px;
 }
 
 @media screen and (min-width:768px) {
-	.table-sponsor.sp {
-		display: none;
-	}
-
-	.table-sponsor.pc {
-		display: block;
-	}
-  .entry-content table th {
-  	background: #d3ebf5;
-  }
-  .entry-content table tr {
-  	border-bottom: 1px solid #6b9bd2;
-  }
-  .entry-content table td,
-  .entry-content table th {
-  	text-align: center;
-  	padding: 10px;
-  	line-height: 140%;
-  }
+    .table-sponsor.sp {
+        display: none;
+    }
+    .table-sponsor.pc {
+        display: block;
+    }
+    .entry-content table th {
+        background: #d3ebf5;
+    }
+    .entry-content table tr {
+        border-bottom: 1px solid #6b9bd2;
+    }
+    .entry-content table td,
+    .entry-content table th {
+        text-align: center;
+        line-height: 140%;
+    }
 }
 
 .table-sponsor .font-s {
-	font-size: 90%;
+    font-size: 90%;
 }
 
 .table-sponsor .cell-s {
-	width: 5%;
+    width: 5%;
 }
 
 .table-sponsor .cell-m {
-	width: 24.5%;
+    width: 24.5%;
 }
 
 .table-sponsor .cell-l {
-	width: 40%;
+    width: 40%;
 }

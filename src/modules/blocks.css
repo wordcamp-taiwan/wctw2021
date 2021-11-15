@@ -365,7 +365,11 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 .heading-bracket h2,
 .heading-bracket h3 {
 	max-width: calc( 100% - 148px );
+	margin-bottom:0px;
+}
 
+.heading-bracket h4{
+	margin-bottom:0px;
 }
 
 .heading-bracket .wp-block-group__inner-container {
@@ -385,6 +389,7 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
     background-size: contain;
 }
 
+
 .heading-bracket .wp-block-group__inner-container::before {
     background-image: url("https://taiwan.wordcamp.org/2021/files/2021/09/vector-40.png");
     background-size: contain;
@@ -401,6 +406,7 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
     -ms-transform: scaleX(-1);
     transform: scaleX(-1);
 }
+
 
 /*start - call for speakers 2021*/
 .heading-bracket .wp-block-group__inner-container_language {
@@ -668,24 +674,45 @@ ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a:focus {
 }
 
 ul.wordcamp-block.wordcamp-post-list.has-layout-list.wordcamp-sponsors {
-	border: 1px solid #bbcce9;
+	background-color: #1ea858;
+	border: 2px solid #000;
+	border-bottom-width: 5px;
+	border-radius: 20px;
 	margin-bottom: 0;
-	padding: 20px 20px 10px;
 	margin-left: 0;
 }
 
 li.wordcamp-post-list__post.wordcamp-clearfix {
-	border-bottom: 1px solid #bbcce9;
+	background: none;
+	color: #000;
+	text-decoration: none;
+}
+
+li.wordcamp-post-list__post.wordcamp-clearfix {
+	border-bottom: 2px solid #000;
 	margin-bottom: 10px;
 }
 
 li.wordcamp-post-list__post.wordcamp-clearfix:last-child {
-	border-bottom: 0 solid #bbcce9;
+	border-bottom: 0;
 	margin-bottom: 0;
+}
+
+li.wordcamp-post-list__post.wordcamp-clearfix p,
+li.wordcamp-post-list__post.wordcamp-clearfix li {
+	color: #000;
+}
+
+li.wordcamp-post-list__post.wordcamp-clearfix a.wordcamp-image__featured-image-link img {
+	box-shadow: none;
 }
 
 .page-slug-sponsors.page .site-main {
 	padding: 0;
+}
+
+.page-slug-sponsors .wordcamp-post-list__post.wordcamp-clearfix a:not(.wordcamp-image__featured-image-link) {
+	text-decoration: underline;
 }
 
 .slug-yuan-jhen-info img.wordcamp-image__featured-image.wp-post-image {
@@ -699,7 +726,7 @@ li.wordcamp-post-list__post.wordcamp-clearfix:last-child {
 
 	.wordcamp-image__featured-image-container.wordcamp-sponsors__featured-image.wordcamp-sponsors__logo.align-none {
 		text-align: center;
-		padding: 20px 0 30px;
+		padding: 0 0 32px;
 	}
 
 	.wordcamp-image__featured-image-container.wordcamp-sponsors__featured-image.wordcamp-sponsors__logo.align-none a {
@@ -707,14 +734,17 @@ li.wordcamp-post-list__post.wordcamp-clearfix:last-child {
 	}
 
 	ul.wordcamp-block.wordcamp-post-list.has-layout-list.wordcamp-sponsors {
-		border: 1px solid #bbcce9;
 		margin-bottom: 20px;
 		padding: 20px 35px;
 	}
 
 	li.wordcamp-post-list__post.wordcamp-clearfix {
-		border-bottom: 1px solid #bbcce9;
-		margin-bottom: 20px;
+		border-bottom: 2px solid #000;
+		margin-bottom: 5px;
+	}
+
+	.page-slug-sponsors li.wordcamp-post-list__post.wordcamp-clearfix {
+		padding: 75px 45px 56px;
 	}
 }
 
