@@ -62,8 +62,7 @@ a, .nav-title a, .entry-content a {
 } */
 
 h2:not(.widget-title):not(.home_info_sub),
-h4.sponsor-level-title,
-h3.wordcamp-sessions__title {
+h4.sponsor-level-title {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -76,7 +75,6 @@ h3.wordcamp-sessions__title {
 
 h2:not(.widget-title):not(.home_info_sub)::before,
 h3[class^="heading-"]::before,
-h3.wordcamp-sessions__title::before,
 h4[class^="heading-"]::before {
 	content: '';
 	display: -webkit-box;
@@ -115,12 +113,6 @@ h3.heading-star {
 
 h3.heading-star::before {
 	background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/h3.png);
-	min-width: 37px;
-	margin-right: 20px;
-}
-
-h3.wordcamp-sessions__title::before {
-	background-image: url(https://taiwan.wordcamp.org/2021/files/2021/09/vector-39.png);
 	min-width: 37px;
 	margin-right: 20px;
 }
@@ -760,7 +752,13 @@ body:not(.twentyseventeen-front-page) .entry-content {
 	border-radius: 16px;
 	text-decoration: none;
 }
+<<<<<<< HEAD
+.entry-content .wp-block-button__link {
+	background-color: #000;
+}
+=======
 
+>>>>>>> f320a79dfec3c4e0843802414fcab6e96eceb415
 /* 關於 WordCamp 按鈕 */
 .wp-block-column.row-right .home_about_but .wp-block-button__link {
 	background-color: #fdd708;
@@ -779,6 +777,118 @@ body:not(.twentyseventeen-front-page) .entry-content {
     border-radius: 30px;
     background: #000;
 }
+
+/* 購票頁面選購數量背景顏色修正 */
+.tix_tickets_table .tix-column-quantity select {
+	background-color: #fff;
+}
+
+/* 前往取票 */
+.fixedRightBottom {
+	position: fixed;
+	right: 10;
+	bottom: 10;
+}
+.fixedRightBottom img {
+	width: 70px;
+	height: 220px;
+}
+
+/*講者列表樣式*/
+.row-fs{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align:start;
+        -ms-flex-align:start;
+            align-items:flex-start;
+  }
+  .row-c{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+  }
+  .row-sb{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .speakerline{
+    width: 849px;
+    text-align: center;
+    margin-bottom: 24px;
+    border-bottom: 3px black solid;
+  }
+  /*星海級*/
+  .galaxy{
+    width: 1090px;
+     border: solid black 2px;
+ border-radius: 10px;
+height: 394px;
+font-size: 18px;
+margin-bottom: 24px;
+   }
+   .galaxy-lt{
+    width: 60%;
+ padding: 15px;
+ height: 360px;
+   }
+   .galaxy-rt{
+    width: 40%;
+    background-color: #666666;
+    border: solid black 2px;
+    height: 360px;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+   }
+   
+  /*環球級*/
+   .global{
+    width: 1090px;
+    margin-bottom: 24px;
+   }
+   .global-item{
+    width: 500px;
+    margin-bottom: 24px;
+    height: 405px;
+    border: solid black 2px;
+    border-radius: 10px;
+    padding: 15px;
+   }
+   /*天下級*/
+   .national{
+    width: 1090px;
+    margin-bottom: 24px;
+   }
+   .national-item{
+    width: 200px;
+    margin-bottom: 24px;
+    height: 205px;
+    border: solid black 2px;
+    border-radius: 10px;
+    padding: 15px;
+   }
 /* hide single post sidebar & adjust blog layout */
 #page #secondary {
 	display: none;
@@ -1582,7 +1692,6 @@ header#masthead.site-header {
 		max-height:calc(70vh - 32px);
 	}
 }
-
 .navigation-top {
 	background-color: #000;
 	/* border-radius: 10px; */
@@ -3183,11 +3292,7 @@ article#panel4 {
 
 /*網站各個按鈕樣式*/
 .entry-content .wp-block-button__link {
-<<<<<<< HEAD
-	background-color: #23459A;
-=======
 	background-color: #000;
->>>>>>> f320a79dfec3c4e0843802414fcab6e96eceb415
 	border: 2px solid #060606;
 	border-radius: 10px;
 	color: #fff;
