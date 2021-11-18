@@ -2349,8 +2349,7 @@ a.wp-block-button__link:active {
 
 .fixed-quick-link {
 	position: fixed;
-	top: 40%;
-	top: 40vh;
+	top: 10;
 	right: 0;
 	display: inline-block;
 	z-index: 99;
@@ -3175,7 +3174,7 @@ h1#home_news_title {
 	height: 62px;
 	background-repeat: no-repeat;
 	    background-position: center;
-	color: #fffff;
+	color: #ffffff;
 }
 
 .page.twentyseventeen-front-page .twentyseventeen-panel .entry-content>h1#home_news_title {
