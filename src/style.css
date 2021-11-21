@@ -771,6 +771,12 @@ body:not(.twentyseventeen-front-page) .entry-content {
 	right: 10;
 	bottom: 10;
 }
+
+.page-slug-call-for-speakers .fixedRightBottom {
+	top: 50%;
+	z-index: 9999;
+}
+
 .fixedRightBottom img {
 	width: 70px;
 	height: 220px;
