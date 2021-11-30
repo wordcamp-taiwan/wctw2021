@@ -71,6 +71,7 @@ h4.sponsor-level-title {
 	        align-items: center;
 	color: #000;
 	font-size: 28px;
+	text-align: center;
 }
 
 h2:not(.widget-title):not(.home_info_sub)::before,
