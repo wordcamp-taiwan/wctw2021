@@ -738,13 +738,9 @@ body:not(.twentyseventeen-front-page) .entry-content {
 	border-radius: 16px;
 	text-decoration: none;
 }
-<<<<<<< HEAD
 .entry-content .wp-block-button__link {
 	background-color: #000;
 }
-=======
-
->>>>>>> f320a79dfec3c4e0843802414fcab6e96eceb415
 /* 關於 WordCamp 按鈕 */
 .wp-block-column.row-right .home_about_but .wp-block-button__link {
 	background-color: #fdd708;
