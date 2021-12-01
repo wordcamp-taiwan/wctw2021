@@ -71,6 +71,7 @@ h4.sponsor-level-title {
 	        align-items: center;
 	color: #000;
 	font-size: 28px;
+	text-align: center;
 }
 
 h2:not(.widget-title):not(.home_info_sub)::before,
@@ -3736,6 +3737,7 @@ table.wcpt-schedule td {
 .wcpt-session-speakers {
     display: block;
     margin-top: 1em;
+    text-align: center;
 }
 
 .wcpt-session-speakers a {
@@ -3748,7 +3750,7 @@ table.wcpt-schedule td {
     content: "";
     width: 20px;
     height: 19px;
-    background: url('https://2019.taipei.wordcamp.org/files/2019/08/wctpe-2019-icons-title.png') 50% no-repeat;
+    background: url('https://taiwan.wordcamp.org/2021/files/2021/11/vector-41-1.png') 50% no-repeat;
     background-size: contain;
     margin-right: 5px;
     position: relative;
